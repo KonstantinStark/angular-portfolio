@@ -9,8 +9,9 @@
     height: 98px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0px 96px ;
     .nav-links {
         display: flex;
         flex-direction: row;

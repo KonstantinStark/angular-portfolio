@@ -12,9 +12,12 @@ section {
     flex-direction: column;
 }
 
-.titel {
-    display: flex;
-    align-items: center;
+
+    .titel-text {
+        padding-top: 316px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 }
 
 h1 {
