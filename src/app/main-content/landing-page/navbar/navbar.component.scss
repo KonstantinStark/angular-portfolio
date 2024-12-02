@@ -11,10 +11,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 96px ;
+    padding: 0px 96px;
+
     .nav-links {
         display: flex;
         flex-direction: row;
         gap: 24px;
+        cursor: pointer;
+
+        >p {
+            &:hover {
+                color: #3dcfb6;
+            }
+        }
     }
 }
