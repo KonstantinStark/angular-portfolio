@@ -2,7 +2,7 @@
 section {
     height: 100vh;
     width: 100%;
-    background-image: url('/assets/img/background.png');
+    background-image: url('/assets/img/hero/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -10,4 +10,24 @@ section {
     justify-content: start;
     align-items: center;
     flex-direction: column;
+}
+
+.titel {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'FiraCode';
+    color: white;
+    font-weight: 400;
+    font-size: 40px;
+
+}
+
+h2 {
+    font-family: 'Karla';
+    color: white;
+    font-weight: 700;
+    font-size: 128px;
 }

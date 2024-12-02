@@ -4,3 +4,27 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+@font-face {
+    font-display: swap; 
+    font-family: 'FiraCode';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/FiraCode-Regular.ttf');
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/Karla-Regular.ttf');
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/RobotoMono-Regular.ttf');
+}
