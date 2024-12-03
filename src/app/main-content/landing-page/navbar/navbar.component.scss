@@ -17,12 +17,27 @@
         display: flex;
         flex-direction: row;
         gap: 24px;
-        cursor: pointer;
 
-        >p {
-            &:hover {
-                color: #3dcfb6;
-            }
+        >a {
+            position: relative;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: #3dcfb6;
+            border-radius: 50%;
+            opacity: 0;
+        }
+        a:hover::after {
+            opacity: 1;
         }
     }
 }
+
