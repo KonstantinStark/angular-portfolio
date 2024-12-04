@@ -10,7 +10,7 @@ section {
 }
 
 .titel-text {
-    padding-top: 316px;
+    padding-top: 216px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,6 +73,42 @@ h2 {
     }
 }
 
+.scrolling-banner {
+    position: absolute;
+    bottom: 5.2%;
+    width: 100%;
+    overflow: hidden;
+    transform: skewY(-3deg);
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    z-index: 100;
+    
+    .scrolling-banner::before {
+        filter: blur(8px);
+    }
+    
+    .scrolling-text {
+        display: inline-block;
+        white-space: nowrap;
+        color: #00f3d2;
+        font-family: 'Karla-Light';
+        word-spacing: 1rem;
+        font-size: 24px;
+        font-weight: 100;
+        animation: scroll-text 100s linear infinite;
+    }
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(5%); 
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 .left-side-button-container {
     display: flex;
 
@@ -121,8 +157,6 @@ h2 {
 }
 
 .right-side-button-container {
-    cursor: pointer;
-
     .contacts {
         display: flex;
         flex-direction: column;
@@ -134,6 +168,7 @@ h2 {
         width: 30px;
         height: 45px;
         gap: 16px;
+        cursor: pointer;
 
         .mail-to {
             font-family: 'Karla';
@@ -143,6 +178,7 @@ h2 {
             color: white;
             font-size: 18px;
             text-decoration: none;
+            cursor: pointer;
 
             &:hover {
                 color: #00f3db;
@@ -152,7 +188,7 @@ h2 {
 
     .right-line {
         background-color: white;
-        height: 220px;
+        height: 190px;
         width: 1px;
         position: absolute;
         top: 80%;

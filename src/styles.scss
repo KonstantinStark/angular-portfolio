@@ -36,6 +36,13 @@ body::after {
 
 @font-face {
     font-display: swap;
+    font-family: 'Karla-Light';
+    font-style: normal;
+    src: url('./assets/fonts/Karla-Light.ttf');
+}
+
+@font-face {
+    font-display: swap;
     font-family: 'Roboto';
     font-style: normal;
     src: url('./assets/fonts/RobotoMono-Regular.ttf');
