@@ -133,8 +133,6 @@ h2 {
     }
 }
 
-
-
 @keyframes scroll-text {
     0% {
         transform: translateX(5%);
@@ -146,8 +144,6 @@ h2 {
 }
 
 .left-side-button-container {
-    display: flex;
-
     .scroll-button {
         background-color: transparent;
         border: 2px solid $green-color;
