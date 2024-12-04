@@ -66,7 +66,7 @@ h2 {
             color: $green-color;
 
             .button-text {
-                animation: button_text_slide 3s forwards;
+                animation: button_text_slide 4s forwards;
             }
         }
 
@@ -84,18 +84,22 @@ h2 {
     0% {
         left: 0;
     }
+
     29% {
         left: -120%;
     }
+
     30% {
         opacity: 0;
         left: 120%;
     }
+
     31% {
         opacity: 1;
     }
+
     80% {
-        left: 0;
+        left: 20%;
     }
 }
 
@@ -122,12 +126,14 @@ h2 {
         font-size: 24px;
         font-weight: 100;
         animation: scroll-text 100s linear infinite;
+
+        .dot-text {
+            word-spacing: 4rem;
+        }
     }
 }
 
-.dot-text {
-    word-spacing: 4rem;
-}
+
 
 @keyframes scroll-text {
     0% {

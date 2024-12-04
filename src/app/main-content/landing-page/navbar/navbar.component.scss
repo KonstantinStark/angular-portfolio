@@ -24,6 +24,7 @@
             text-decoration: none;
             cursor: pointer;
         }
+
         a::after {
             content: '';
             position: absolute;
@@ -36,9 +37,103 @@
             border-radius: 50%;
             opacity: 0;
         }
+
         a:hover::after {
             opacity: 1;
         }
     }
 }
 
+.toggle-switch {
+    position: relative;
+    width: 86px;
+    height: 28px;
+
+    input {
+        display: none;
+    }
+
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #3dcfb6;
+        border-radius: 20px;
+        background-color: transparent;
+        position: relative;
+        transition: border-color 0.2s ease;
+        cursor: pointer;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -2%;
+            top: -4%;
+            width: 52%;
+            height: 108%;
+            background-color: #00d1b2;
+            border-radius: 22px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        &:hover {
+            border-color: white;
+
+            &::before {
+                background-color: #00c4a7;
+            }
+        }
+
+        .switch-text {
+            font-size: 16px;
+            flex: 1;
+            text-align: center;
+            color: #3dcfb6;
+            font-weight: normal;
+            position: relative;
+        }
+
+        .de,
+        .en {
+            color: #267265;
+
+            &:hover {
+                color: #3dcfb6;
+            }
+        }
+    }
+
+    input {
+        &:checked+label {
+            &::before {
+                transform: translateX(100%);
+            }
+
+            &:hover::before {
+                background-color: #00b89b;
+            }
+
+            .de {
+                font-weight: bold;
+                color: white;
+            }
+
+            .en:hover {
+                color: #3dcfb6;
+            }
+        }
+
+        &:not(:checked)+label {
+            .en {
+                font-weight: bold;
+                color: white;
+            }
+
+            .de:hover {
+                color: #3dcfb6;
+            }
+        }
+    }
+}
