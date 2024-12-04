@@ -1,12 +1,19 @@
 $green-color: #3dcfb6;
 
+// .gradient-box {
+//     height: 100vh;
+//     width: 100%;
+//     background: linear-gradient(45deg, #1C1C1C, #08463B);
+// }
+
 section {
     height: 100vh;
     width: 100%;
-    background-image: url('/assets/img/hero/background.png');
+    background-image: url('./../../../assets/img/hero/background.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
+
 }
 
 .titel-text {
@@ -59,7 +66,7 @@ h2 {
             color: $green-color;
 
             .button-text {
-                transform: translateX(-200%);
+                animation: button_text_slide 3s forwards;
             }
         }
 
@@ -73,6 +80,26 @@ h2 {
     }
 }
 
+@keyframes button_text_slide {
+    0% {
+        left: 0;
+    }
+    29% {
+        left: -120%;
+    }
+    30% {
+        opacity: 0;
+        left: 120%;
+    }
+    31% {
+        opacity: 1;
+    }
+    80% {
+        left: 0;
+    }
+}
+
+
 .scrolling-banner {
     position: absolute;
     bottom: 5.2%;
@@ -82,26 +109,29 @@ h2 {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 15px 0;
     z-index: 100;
-    
+
     .scrolling-banner::before {
         filter: blur(8px);
     }
-    
+
     .scrolling-text {
         display: inline-block;
         white-space: nowrap;
         color: #00f3d2;
         font-family: 'Karla-Light';
-        word-spacing: 1rem;
         font-size: 24px;
         font-weight: 100;
         animation: scroll-text 100s linear infinite;
     }
 }
 
+.dot-text {
+    word-spacing: 4rem;
+}
+
 @keyframes scroll-text {
     0% {
-        transform: translateX(5%); 
+        transform: translateX(5%);
     }
 
     100% {
@@ -167,7 +197,7 @@ h2 {
         z-index: 2;
         width: 30px;
         height: 45px;
-        gap: 16px;
+        gap: 23px;
         cursor: pointer;
 
         .mail-to {
@@ -181,8 +211,16 @@ h2 {
             cursor: pointer;
 
             &:hover {
-                color: #00f3db;
+                color: $green-color;
             }
+        }
+
+        .git-link:hover {
+            content: url('./../../../assets/img/hero/GitHubHover.png');
+        }
+
+        .linked-link:hover {
+            content: url('./../../../assets/img/hero/Hover.png');
         }
     }
 
