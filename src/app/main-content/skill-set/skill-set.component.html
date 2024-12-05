@@ -11,22 +11,20 @@
                 meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft
                 der Webentwicklung an der Spitze zu bleiben.
             </p>
-            <h3>Sie benötigen eine <p>andere Fähigkeit?</p></h3>
+            <h3>Sie benötigen eine <span>andere Fähigkeit?</span></h3>
             <p>Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.</p>
+            <div class="button-container">
+
+                <button class="custom-button" id="right-button">
+                    <div class="button-text">Schreibe mir</div>
+                </button>
+            </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="skill-icon-container">
+        @for (icon of icons; track $index) {
+        <img class="icon" src="{{ icon.image }}" alt="">
+        }
+    </div>
 </Section>
