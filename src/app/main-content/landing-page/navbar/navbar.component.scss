@@ -145,16 +145,16 @@ $green-color: #3dcfb6;
     top: 10.3%;
     right: 10%;
     width: 220px;
-    height: 245px;
+    height: 200px;
     background: linear-gradient(45deg, #1C1C1C 30%, #08463B 90%);
-    padding: 20px;
+    padding: 17px;
     border: 1px solid $green-color;
     border-radius: 20px;
 
     .nav-links {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 19px;
         align-items: center;
 
         >a {
@@ -335,5 +335,19 @@ $green-color: #3dcfb6;
 
     .burger-container {
         display: block;
+    }
+}
+
+@media (max-width: 560px) {
+    .burger-container  {
+        position: absolute;
+        right: 5%;
+    }
+    .hamburger-menu {
+        right: 5%;
+    }
+    .stark-logo {
+        position: absolute;
+        left: 5%
     }
 }
