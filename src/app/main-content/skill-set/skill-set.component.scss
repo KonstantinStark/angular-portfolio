@@ -117,10 +117,50 @@ p {
     }
 }
 
-.skill-icon-container {
-    margin: 190px 100px 0px -130px;
+.skill-set-container, .skill-icon-container {
+    opacity: 0;
+    position: relative; /* Wichtig für das Layout */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
 
-    img {
-        padding: 30px;
+/* Keyframes für Skill Set */
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
     }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+
+.skill-set-container {
+    animation: slide-in-left 1s forwards;
+}
+
+
+.skill-icon-container {
+    animation: slide-in-right 1s forwards;
+}
+
+.skill-icon-container .icon {
+    margin: 10px;
+}
+
+.skill-icon-container {
+    margin: 190px 100px 0px 0; 
 }

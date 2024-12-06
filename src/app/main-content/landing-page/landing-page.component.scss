@@ -299,7 +299,7 @@ h2 {
 
 @media (max-width: 660px) {
     h1 {
-        font-size: 18px;
+        font-size: 19px;
     }
 
     h2 {
@@ -310,7 +310,7 @@ h2 {
 
 @media (max-width: 570px) {
     h1 {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     h2 {
@@ -321,7 +321,7 @@ h2 {
 
 @media (max-width: 540px) {
     h1 {
-        font-size: 16px;
+        font-size: 17px;
     }
 
     h2 {
@@ -337,7 +337,7 @@ h2 {
 
 @media (max-width: 490px) {
     h1 {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     h2 {
@@ -346,10 +346,27 @@ h2 {
 
     .button-container {
         gap: 20px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 15px;
     }
 
-    .custom-button {
-        width: 150px;
-        height: 50px;
+    h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 340px) {
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 38px;
     }
 }

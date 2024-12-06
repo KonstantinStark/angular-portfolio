@@ -102,3 +102,9 @@
         }
     }
 }
+
+@media (max-width: 1210px) {
+    .container {
+flex-direction: column;
+    }
+}
