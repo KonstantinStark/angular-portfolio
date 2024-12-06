@@ -12,6 +12,7 @@ body::after {
     mix-blend-mode: screen;
     will-change: background-position;
     opacity: 0.15;
+    z-index: 1001;
 }
 
 * {

@@ -1,18 +1,46 @@
 <div class="navbar">
-    <div class="nav-links">
-        <div class="toggle-switch">
-            <input type="checkbox" id="language-switch" />
-            <label for="language-switch">
-                <span class="switch-text en">EN</span>
-                <span class="switch-text de">DE</span>
-            </label>
+    <div class="d_none">
+        <div class="nav-links">
+            <div class="toggle-switch">
+                <input type="checkbox" id="language-switch" />
+                <label for="language-switch">
+                    <span class="switch-text en">EN</span>
+                    <span class="switch-text de">DE</span>
+                </label>
+            </div>
+            <a href="#about-me">Über mich</a>
+            <a href="#skills">Fertigkeiten</a>
+            <a href="#projects">Projekte</a>
         </div>
-        <a href="#about-me">Über mich</a>
-        <a href="#skills">Fertigkeiten</a>
-        <a href="#projects">Projekte</a>
     </div>
 
     <div class="stark-logo">
         <img src="./assets/img/navbar/starklogo.png">
+    </div>
+
+    <div class="hamburger-menu" [class.d-none]="menuHidden">
+        <div>
+            <div class="nav-links">
+                
+                <a href="#about-me">Über mich</a>
+                <a href="#skills">Fertigkeiten</a>
+                <a href="#projects">Projekte</a>
+                <div class="burger-toggle-switch">
+                    <input type="checkbox" id="burger-language-switch" />
+                    <label for="burger-language-switch">
+                        <span class="switch-text en">EN</span>
+                        <span class="switch-text de">DE</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="burger-container">
+        <label class="burger">
+            <input type="checkbox" (click)="toggleHamburgerMenu()" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
     </div>
 </div>

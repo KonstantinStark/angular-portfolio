@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  menuHidden = true; // Zustand des Menüs
 
+  toggleHamburgerMenu(): void {
+    this.menuHidden = !this.menuHidden;
+  }
 }

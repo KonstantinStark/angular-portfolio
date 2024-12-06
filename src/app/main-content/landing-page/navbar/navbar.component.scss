@@ -139,3 +139,201 @@ $green-color: #3dcfb6;
         }
     }
 }
+
+.hamburger-menu {
+    position: absolute;
+    top: 10.3%;
+    right: 10%;
+    width: 220px;
+    height: 245px;
+    background: linear-gradient(45deg, #1C1C1C 30%, #08463B 90%);
+    padding: 20px;
+    border: 1px solid $green-color;
+    border-radius: 20px;
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+
+        >a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .burger-toggle-switch {
+        position: relative;
+        width: 86px;
+        height: 28px;
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $green-color;
+            border-radius: 20px;
+            background-color: transparent;
+            position: relative;
+            transition: border-color 0.2s ease;
+            cursor: pointer;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -2%;
+                top: -4%;
+                width: 52%;
+                height: 108%;
+                background-color: #00d1b2;
+                border-radius: 22px;
+                transition: transform 0.3s ease, background-color 0.3s ease;
+            }
+
+            &:hover {
+                border-color: white;
+
+                &::before {
+                    background-color: #00c4a7;
+                }
+            }
+
+            .switch-text {
+                font-size: 16px;
+                flex: 1;
+                text-align: center;
+                color: $green-color;
+                font-weight: normal;
+                position: relative;
+            }
+
+            .de,
+            .en {
+                color: #267265;
+
+                &:hover {
+                    color: $green-color;
+                }
+            }
+        }
+
+        input {
+            &:checked+label {
+                &::before {
+                    transform: translateX(100%);
+                }
+
+                &:hover::before {
+                    background-color: #00b89b;
+                }
+
+                .de {
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .en:hover {
+                    color: #3dcfb6;
+                }
+            }
+
+            &:not(:checked)+label {
+                .en {
+                    font-weight: bold;
+                    color: white;
+                }
+
+                .de:hover {
+                    color: $green-color;
+                }
+            }
+        }
+    }
+}
+
+.d-none {
+    display: none;
+}
+
+.burger-container {
+    display: none;
+}
+
+.burger {
+    position: relative;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: $green-color;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-100%);
+}
+
+.burger input:checked~span:nth-of-type(1) {
+    transform: rotate(45deg);
+    top: 0px;
+    left: 5px;
+}
+
+.burger input:checked~span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-of-type(3) {
+    transform: rotate(-45deg);
+    top: 28px;
+    left: 5px;
+}
+
+@media (max-width: 955px) {
+    .d_none {
+        display: none;
+    }
+
+    .burger-container {
+        display: block;
+    }
+}
