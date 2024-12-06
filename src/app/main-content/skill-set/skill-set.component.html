@@ -1,4 +1,4 @@
-<Section>
+<Section class="section">
     <div class="skill-set-container">
         <div>
             <h2>Technologien</h2>
@@ -8,7 +8,8 @@
             <p>
                 Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
                 Frontend-Technologien und -Konzepten erworben. Ich bin offen für neue Technologien und Methoden, um
-                meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft
+                meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden
+                Landschaft
                 der Webentwicklung an der Spitze zu bleiben.
             </p>
             <h3>Sie benötigen eine <span>andere Fähigkeit?</span></h3>
@@ -22,9 +23,11 @@
         </div>
     </div>
 
-    <div class="skill-icon-container">
-        @for (icon of icons; track $index) {
-        <img class="icon" src="{{ icon.image }}">
-        }
+    <div class="skill-icon-container-container">
+        <div class="skill-icon-container">
+            @for (icon of icons; track $index) {
+            <img class="icon" src="{{ icon.image }}">
+            }
+        </div>
     </div>
 </Section>

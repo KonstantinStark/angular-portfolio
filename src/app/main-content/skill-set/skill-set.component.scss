@@ -1,6 +1,6 @@
 $green-color: #3dcfb6;
 
-section {
+.section {
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -119,7 +119,7 @@ p {
 
 .skill-set-container, .skill-icon-container {
     opacity: 0;
-    position: relative; /* Wichtig für das Layout */
+    position: relative;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
@@ -162,5 +162,21 @@ p {
 }
 
 .skill-icon-container {
-    margin: 190px 100px 0px 0; 
+    margin: 210px 100px 0px 100px; 
+}
+
+
+@media (max-width: 1210px) {
+    .section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .skill-set-container {
+        margin-top: 700px;
+    }
+    .skill-icon-container {
+        margin: 0px 100px;
+        padding: 10px;
+    }
 }
