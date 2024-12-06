@@ -1,33 +1,34 @@
 <Section class="section">
-    <div class="skill-set-container">
-        <div>
-            <h2>Technologien</h2>
-        </div>
-        <div class="skill-set-text-container">
-            <h1>Fertigkeiten</h1>
-            <p>
-                Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
-                Frontend-Technologien und -Konzepten erworben. Ich bin offen für neue Technologien und Methoden, um
-                meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden
-                Landschaft
-                der Webentwicklung an der Spitze zu bleiben.
-            </p>
-            <h3>Sie benötigen eine <span>andere Fähigkeit?</span></h3>
-            <p>Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.</p>
-            <div class="button-container">
+    <div class="container">
+        <div class="skill-set-container">
+            <div>
+                <h2>Technologien</h2>
+            </div>
+            <div class="skill-set-text-container">
+                <h1>Fertigkeiten</h1>
+                <p>
+                    Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
+                    Frontend-Technologien und -Konzepten erworben. Ich bin offen für neue Technologien und Methoden, um
+                    meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden
+                    Landschaft
+                    der Webentwicklung an der Spitze zu bleiben.
+                </p>
+                <h3>Sie benötigen eine <span>andere Fähigkeit?</span></h3>
+                <p>Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.</p>
+                <div class="button-container">
 
-                <button class="custom-button" id="right-button">
-                    <div class="button-text">Schreibe mir</div>
-                </button>
+                    <button class="custom-button" id="right-button">
+                        <div class="button-text">Schreibe mir</div>
+                    </button>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="skill-icon-container-container">
-        <div class="skill-icon-container">
-            @for (icon of icons; track $index) {
-            <img class="icon" src="{{ icon.image }}">
-            }
+        <div class="skill">
+            <div class="skill-icon-container">
+                @for (icon of icons; track $index) {
+                <img class="icon" src="{{ icon.image }}">
+                }
+            </div>
         </div>
     </div>
 </Section>

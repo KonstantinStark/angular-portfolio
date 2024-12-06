@@ -9,6 +9,7 @@
 
 .container {
     display: flex;
+    margin-top: 80px;
     gap: 200px;
     max-width: 1232.35px;
     height: 708px;
@@ -35,7 +36,7 @@
     border-radius: 8px;
 }
 
-.about-me-container {
+.about-me-container { ///
     margin-top: 100px;
 
     h2 {
@@ -106,10 +107,9 @@
     .container {
         flex-direction: column;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 0px;
         gap: 0px;
-        max-width: 1232.35px;
-        height: 708px;
+        height: 1400px;
 
     }
 
