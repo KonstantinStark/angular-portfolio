@@ -149,7 +149,6 @@ h2 {
         background-color: transparent;
         border: 2px solid $green-color;
         border-radius: 40px;
-        cursor: pointer;
         width: 30px;
         height: 45px;
 
@@ -331,8 +330,6 @@ h2 {
     .button-container {
         gap: 30px;
     }
-
-    .custom-button {}
 }
 
 @media (max-width: 490px) {

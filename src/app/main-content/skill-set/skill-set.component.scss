@@ -15,10 +15,12 @@ $green-color: #3dcfb6;
     gap: 200px;
     max-width: 1232.35px;
     height: 708px;
+    width: 100%;
 }
 
 .skill-set-container {
     margin-top: 100px;
+    width: 100%;
 
     h2 {
         font-size: 24px;
@@ -27,12 +29,14 @@ $green-color: #3dcfb6;
     }
 
     .skill-set-text-container {
-        width: 568px;
-        height: 500px;
+        max-width: 568px;
+        min-width: 300px;
+        width: 100%;
         background-color: #1f2e2b;
         padding: 30px;
         border: 1px solid $green-color;
         border-radius: 40px;
+        flex: 1;
     }
 
     h1 {
