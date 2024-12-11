@@ -1,51 +1,66 @@
 <section class="section">
-    <div class="portfolio">
-        <div>
-            <h2>Portfolio</h2>
-        </div>
-        <h1>Ausgewählte Projekte</h1>
-        <p>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit <br> Projekten, um meine Fähigkeiten
-            in Aktion zu sehen.</p>
+    <div class="portfolio-container">
+        <div class="portfolio">
+            <div>
+                <h2>Portfolio</h2>
+            </div>
+            <h1>Ausgewählte Projekte</h1>
+            <p>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit <br> Projekten, um meine
+                Fähigkeiten
+                in Aktion zu sehen.</p>
 
-        <div class="projects">
-            <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
-                (mouseleave)="hideImage()" (click)="openOverlay(project)">
-                <div class="project-name">
-                    <span>{{ project.name }}</span>
-                    <span>{{ project.skill }}</span>
+            <div class="projects">
+                <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
+                    (mouseleave)="hideImage()" (click)="openOverlay(project)">
+                    <div class="project-name">
+                        <span>{{ project.name }}</span>
+                        <span>{{ project.skill }}</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="hover-image" *ngIf="hoveredImage">
-            <img [src]="hoveredImage" alt="Project preview" />
+            <img [src]="hoveredImage" />
         </div>
     </div>
 
-
     <div class="overlay" *ngIf="isOverlayVisible">
-        <div class="overlay-content">
-            <button class="close-btn" (click)="closeOverlay()">X</button>
-        </div>
-        <div>
-            <h1>{{ selectedProject.number }}</h1>
-            <h2>{{ selectedProject.name }}</h2>
-            <h3>Worum geht es bei diesem Projekt?</h3>
-            <p>{{ selectedProject.description }}</p>
-            <img class="icon" src="{{ selectedProject.skillIcons }}">
-            <img class="icon" src="{{ selectedProject.imageOverlay }}">
-        </div>
-        <div>
-            <button>Nächstes Projekt</button>
-        </div>
 
-        <div class="button-container">
-            <button class="custom-button" id="left-button">
-                <span class="button-text">GitHub </span>
-            </button>
-            <button class="custom-button" id="right-button">
-                <span class="button-text">Live Test</span>
-            </button>
+        <div class="coverlay-container">
+            <div class="left-container">
+                <div>
+                    <h1>{{ selectedProject.number }}</h1>
+                    <h2>{{ selectedProject.name }}</h2>
+                    <h3>Worum geht es bei diesem Projekt?</h3>
+                    <p>{{ selectedProject.description }}</p>
+                    @for (projects of selectedProject.skillIcons; track $index) {
+                    <img class="icon" src="{{ projects.image }}">
+                    }
+                </div>
+                <div class="button-container">
+                    <button class="custom-button" id="left-button">
+                        <span class="button-text">GitHub </span>
+                    </button>
+                    <button class="custom-button" id="right-button">
+                        <span class="button-text">Live Test</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="right-container">
+                <div class="overlay-content">
+                    <div>
+                        <button class="close-btn" (click)="closeOverlay()">✖</button>
+                    </div>
+                    <div>
+                        <img class="icon" src="{{ selectedProject.imageOverlay }}">
+                    </div>
+                    <div>
+                        <button>Nächstes Projekt</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
