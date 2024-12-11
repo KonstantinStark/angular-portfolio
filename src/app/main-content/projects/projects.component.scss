@@ -10,16 +10,17 @@ $green-color: #3dcfb6;
 }
 
 .portfolio {
-    padding: 2rem;
+    padding: 150px;
 }
 
 .portfolio h2 {
-    font-size: 1.2rem;
+    font-size: 24px;
     color: $green-color;
 }
 
 .portfolio h1 {
-    font-size: 2.5rem;
+    font-family: 'FiraCode';
+    font-size: 64px;
     color: $green-color;
     margin-top: 10px;
 }
@@ -27,6 +28,7 @@ $green-color: #3dcfb6;
 .portfolio p {
     font-size: 1rem;
     color: #ffffff;
+    margin-top: 10px;
 }
 
 .projects {
@@ -43,12 +45,12 @@ $green-color: #3dcfb6;
     cursor: pointer;
 }
 
-.test {
+.project-name{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
+    font-family: 'FiraCode';
 }
 
 .project:hover {
@@ -58,7 +60,7 @@ $green-color: #3dcfb6;
 
 
 
-.test p, .test span {
+.project-name span {
     font-size: 24px;
     color: white;
 }

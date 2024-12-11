@@ -11,9 +11,9 @@
         <div class="projects">
             <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
                 (mouseleave)="hideImage()">
-                <div class="test">
+                <div class="project-name">
                     <span>{{ project.name }}</span>
-                    <p>{{ project.tech }}</p>
+                    <span>{{ project.tech }}</span>
                 </div>
             </div>
         </div>
