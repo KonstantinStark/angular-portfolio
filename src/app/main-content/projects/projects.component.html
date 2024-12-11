@@ -9,16 +9,43 @@
 
         <div class="projects">
             <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
-                (mouseleave)="hideImage()">
+                (mouseleave)="hideImage()" (click)="openOverlay(project)">
                 <div class="project-name">
                     <span>{{ project.name }}</span>
-                    <span>{{ project.tech }}</span>
+                    <span>{{ project.skill }}</span>
                 </div>
             </div>
         </div>
 
         <div class="hover-image" *ngIf="hoveredImage">
             <img [src]="hoveredImage" alt="Project preview" />
+        </div>
+    </div>
+
+
+    <div class="overlay" *ngIf="isOverlayVisible">
+        <div class="overlay-content">
+            <button class="close-btn" (click)="closeOverlay()">X</button>
+        </div>
+        <div>
+            <h1>{{ selectedProject.number }}</h1>
+            <h2>{{ selectedProject.name }}</h2>
+            <h3>Worum geht es bei diesem Projekt?</h3>
+            <p>{{ selectedProject.description }}</p>
+            <img class="icon" src="{{ selectedProject.skillIcons }}">
+            <img class="icon" src="{{ selectedProject.imageOverlay }}">
+        </div>
+        <div>
+            <button>Nächstes Projekt</button>
+        </div>
+
+        <div class="button-container">
+            <button class="custom-button" id="left-button">
+                <span class="button-text">GitHub </span>
+            </button>
+            <button class="custom-button" id="right-button">
+                <span class="button-text">Live Test</span>
+            </button>
         </div>
     </div>
 </section>

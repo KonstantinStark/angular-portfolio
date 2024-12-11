@@ -39,13 +39,13 @@ $green-color: #3dcfb6;
     width: 880px;
     height: 109px;
     background-color: transparent;
-    border-top: 1px solid $green-color; 
+    border-top: 1px solid $green-color;
     border-bottom: 1px solid $green-color;
     padding: 42px 0px 0px 0px;
     cursor: pointer;
 }
 
-.project-name{
+.project-name {
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
@@ -80,4 +80,50 @@ $green-color: #3dcfb6;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.overlay {
+    color: white;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 60px;
+    padding-top: 32px;
+
+    .custom-button {
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 50px;
+        font-size: 16px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 30px;
+        cursor: pointer;
+        outline: none;
+        transition: border-color 0.3s ease, color 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            border-color: $green-color;
+            color: $green-color;
+
+            .button-text {
+                animation: button_text_slide 4s forwards;
+            }
+        }
+
+        .button-text {
+            display: inline-block;
+            white-space: nowrap;
+            position: absolute;
+            transform: translateX(0);
+            transition: transform 1s linear;
+        }
+    }
 }

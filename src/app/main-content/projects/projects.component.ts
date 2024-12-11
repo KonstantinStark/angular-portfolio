@@ -10,17 +10,36 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   hoveredImage: string | null = null;
+  isOverlayVisible: boolean = false;
+  selectedProject: any = null;
 
   projects = [
     {
+      number: '01',
       name: 'Join',
-      tech: 'HTML | CSS | JavaScript | Firebase',
-      image: './assets/img/projects/join.png' 
+      skill: 'HTML | CSS | JavaScript | Firebase',
+      image: './assets/img/projects/join.png',
+      imageOverlay: './assets/img/projects/joinOverlay.png',
+      description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+      skillIcons: [] = [
+        { name: 'HTML', image: './assets/img/projects/html.png' },
+        { name: 'CSS', image: './assets/img/projects/css.png' },
+        { name: 'JavaScript', image: './assets/img/projects/js.png' },
+        { name: 'Firebase', image: './assets/img/projects/firebase.png' },
+      ],
     },
     {
+      number: '02',
       name: 'El Pollo Loco',
-      tech: 'HTML | CSS | JavaScript',
-      image: './assets/img/projects/loco.png'
+      skill: 'HTML | CSS | JavaScript',
+      image: './assets/img/projects/loco.png',
+      imageOverlay: './assets/img/projects/locoOverlay.png',
+      description: 'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
+      skillIcons: [] = [
+        { name: 'HTML', image: './assets/img/projects/html.png' },
+        { name: 'CSS', image: './assets/img/projects/css.png' },
+        { name: 'JavaScript', image: './assets/img/projects/js.png' },
+      ],
     }
   ];
 
@@ -28,7 +47,17 @@ export class ProjectsComponent {
     this.hoveredImage = imagePath;
   }
 
-  hideImage(){
+  hideImage() {
     this.hoveredImage = null;
+  }
+
+  openOverlay(project: any) {
+    this.selectedProject = project;
+    this.isOverlayVisible = true;
+  }
+
+  closeOverlay() {
+    this.isOverlayVisible = false;
+    this.selectedProject = null;
   }
 }
