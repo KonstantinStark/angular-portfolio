@@ -10,7 +10,7 @@ $green-color: #3dcfb6;
 }
 
 .portfolio {
-    padding: 150px;
+    padding-left: 150px;
 }
 
 .portfolio h2 {
@@ -39,8 +39,8 @@ $green-color: #3dcfb6;
     width: 880px;
     height: 109px;
     background-color: transparent;
-    border-top: 1px solid #00ffcc; 
-    border-bottom: 1px solid #00ffcc;
+    border-top: 1px solid $green-color; 
+    border-bottom: 1px solid $green-color;
     padding: 42px 0px 0px 0px;
     cursor: pointer;
 }
@@ -58,25 +58,16 @@ $green-color: #3dcfb6;
     color: #121212;
 }
 
-
-
 .project-name span {
     font-size: 24px;
     color: white;
 }
 
 .hover-image {
-    position: absolute;
-    top: 50%;
-    right: -300px;
     transform: translateY(-50%);
-    width: 280px;
+    width: 300px;
     height: 200px;
-    border: 3px solid #00ffcc;
-    border-radius: 8px;
-    background-color: #1e1e1e;
     overflow: hidden;
-    display: none;
     z-index: 10;
 }
 
