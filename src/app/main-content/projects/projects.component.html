@@ -1,1 +1,25 @@
-<p>projects works!</p>
+<section class="section">
+
+    <div class="portfolio">
+        <div>
+            <h2>Portfolio</h2>
+        </div>
+        <h1>Ausgewählte Projekte</h1>
+        <p>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit <br> Projekten, um meine Fähigkeiten
+            in Aktion zu sehen.</p>
+
+        <div class="projects">
+            <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
+                (mouseleave)="hideImage()">
+                <div class="test">
+                    <span>{{ project.name }}</span>
+                    <p>{{ project.tech }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hover-image" *ngIf="hoveredImage">
+            <img [src]="hoveredImage" alt="Project preview" />
+        </div>
+    </div>
+</section>
