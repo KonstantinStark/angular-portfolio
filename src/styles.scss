@@ -4,8 +4,6 @@ body::after {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     background: radial-gradient(circle at var(--cursor-x, 50%) var(--cursor-y, 50%), #3dcfb6, transparent 13%);
     pointer-events: none;
     z-index: 1000;
@@ -19,6 +17,8 @@ body::after {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    max-width: 1920px;
+    max-height: 100vh;
 }
 
 @font-face {

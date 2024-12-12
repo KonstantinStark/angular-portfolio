@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './main-content/landing-page/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
