@@ -22,10 +22,10 @@ export class ProjectsComponent {
       imageOverlay: './assets/img/projects/joinOverlay.png',
       description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
       skillIcons: [] = [
-        { name: 'HTML', image: './assets/img/projects/html.png' },
-        { name: 'CSS', image: './assets/img/projects/css.png' },
-        { name: 'JavaScript', image: './assets/img/projects/js.png' },
-        { name: 'Firebase', image: './assets/img/projects/firebase.png' },
+        { image: './assets/img/projects/html.png' },
+        { image: './assets/img/projects/css.png' },
+        { image: './assets/img/projects/js.png' },
+        { image: './assets/img/projects/firebase.png' },
       ],
     },
     {
@@ -36,9 +36,9 @@ export class ProjectsComponent {
       imageOverlay: './assets/img/projects/locoOverlay.png',
       description: 'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
       skillIcons: [] = [
-        { name: 'HTML', image: './assets/img/projects/html.png' },
-        { name: 'CSS', image: './assets/img/projects/css.png' },
-        { name: 'JavaScript', image: './assets/img/projects/js.png' },
+        { image: './assets/img/projects/html.png' },
+        { image: './assets/img/projects/css.png' },
+        { image: './assets/img/projects/js.png' },
       ],
     }
   ];
