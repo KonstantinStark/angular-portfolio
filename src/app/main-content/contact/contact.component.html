@@ -14,23 +14,43 @@
 
 
         <div class="contact-form">
-            <form (ngSubmit)="onSubmit()" >
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="text-line"></div>
                 <div class="form-field">
-                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
-                        placeholder="Wie ist Ihr Name?" />
-                    <label for="name">Ups! Ihr Name scheint zu fehlen</label>
+                    <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" type="text" id="name"
+                        name="name" placeholder="Wie ist Ihr Name?" required />
+
+                    @if (!name.valid && name.touched && !name.disabled) {
+                    <div class="valid-text">Ups! Ihr Name scheint zu fehlen</div>
+                    }
+                    <!-- <label for="name">Ups! Ihr Name scheint zu fehlen</label> -->
                 </div>
+                <br> <br>
+                <div class="text-line"></div>
+                <div class="form-field">
+                    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        placeholder="Wie lautet Ihre E-Mail?" required
+                        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
+
+                    @if (!email.valid && email.touched && !email.disabled) {
+                    <div class="valid-text">Hoppla! Ihre E-Mail ist erforderlich</div>
+                    }
+                    <!-- <label for="email">Hoppla! Ihre E-Mail ist erforderlich</label> -->
+                </div>
+                <br> <br>
+                <div class="text-line"></div>
+
 
                 <div class="form-field">
-                    <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                        placeholder="Wie lautet Ihre E-Mail?" />
-                    <label for="email">Hoppla! Ihre E-Mail ist erforderlich</label>
-                </div>
+                    <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="text-line"
+                        id="message" name="message" placeholder="Wie kann ich Ihnen helfen?" required></textarea>
 
-                <div class="form-field">
-                    <textarea [(ngModel)]="contactData.message" id="message" name="message"
-                        placeholder="Wie kann ich Ihnen helfen?"></textarea>
-                    <label class="text-line" for="message">Was möchten Sie entwickeln?</label>
+                    @if (!message.valid && message.touched && !message.disabled) {
+                    <div class="valid-text">Was möchten Sie entwickeln?</div>
+                    }
+                    <div class="text-line"></div>
+                    <br> <br>
+                    <!-- <label class="text-line" for="message">Hallo Konstantin, ich bin interessiert an...</label> -->
                 </div>
 
                 <div class="privacy-policy">

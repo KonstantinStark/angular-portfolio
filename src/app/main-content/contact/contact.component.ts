@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, FormsModule } from '@angular/forms'; 
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators, FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'] 
+  styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
 
@@ -17,8 +17,9 @@ export class ContactComponent {
     message: "",
   }
 
-  onSubmit() {
-    console.log(this.contactData);
-    
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.contactData);
+    }
   }
 }
