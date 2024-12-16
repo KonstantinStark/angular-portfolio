@@ -15,8 +15,7 @@ $green-color: #3dcfb6;
     width: 100%;
     height: 541px;
     display: flex;
-    align-items: center;
-    justify-content: space-;
+    gap: 56px;
 
     .contact h2 {
         font-size: 24px;
@@ -47,6 +46,7 @@ $green-color: #3dcfb6;
 
 .contact-form {
     form {
+
         .form-field {
             padding: 42px 0px 0px 0px;
 
@@ -93,6 +93,16 @@ $green-color: #3dcfb6;
             }
         }
 
+        .terms {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            >img:hover {
+                background-color: rgba(61, 207, 183, 0.4);
+                border-radius: 100%;
+            }
+        }
 
         .privacy-policy {
             padding-top: 10px;
@@ -153,5 +163,16 @@ $green-color: #3dcfb6;
             transform: translateX(0);
             transition: transform 1s linear;
         }
+    }
+}
+
+
+@media (max-width: 1210px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        gap: 0px;
+        height: 1400px;
     }
 }

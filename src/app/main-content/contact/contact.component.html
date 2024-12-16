@@ -54,7 +54,9 @@
                 </div>
 
                 <div class="privacy-policy">
-                    <input type="checkbox" id="privacy" name="privacy" />
+                    <button class="terms" type="button" (click)="toggleTerms()" required>
+                        <img src="{{ img }}" alt="" />
+                      </button>
                     <label for="privacy">
                         Ich habe die <a href="#" class="privacy-link">Datenschutzbestimmungen</a> gelesen und erkläre
                         mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.
