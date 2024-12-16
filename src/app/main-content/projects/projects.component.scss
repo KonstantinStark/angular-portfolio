@@ -7,11 +7,13 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
+   
 }
 
 .portfolio-container {
     display: flex;
     align-items: center;
+    margin-bottom: 300px;
 
     .portfolio h2 {
         font-size: 24px;

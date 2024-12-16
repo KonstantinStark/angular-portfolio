@@ -1,7 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './main-content/landing-page/navbar/navbar.component';
+
 
 @Component({
   selector: 'app-root',
@@ -13,10 +13,10 @@ import { NavbarComponent } from './main-content/landing-page/navbar/navbar.compo
 
 export class AppComponent {
   title = 'angular-portfolio';
-  
+
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent): void {
-    document.documentElement.style.setProperty('--cursor-x', `${event.clientX}px`);
-    document.documentElement.style.setProperty('--cursor-y', `${event.clientY}px`);
-  }  
+    document.body.style.setProperty('--cursor-x', `${event.clientX}px`);
+    document.body.style.setProperty('--cursor-y', `${event.clientY}px`);
+  }
 }
