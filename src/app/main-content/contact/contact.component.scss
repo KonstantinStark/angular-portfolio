@@ -16,6 +16,7 @@ $green-color: #3dcfb6;
     height: 541px;
     display: flex;
     align-items: center;
+    justify-content: space-;
 
     .contact h2 {
         font-size: 24px;
@@ -40,16 +41,15 @@ $green-color: #3dcfb6;
     }
 }
 
+.text-line {
+    border-bottom: 1px solid $green-color;
+}
+
 .contact-form {
     form {
-        display: flex;
-        flex-direction: column;
-
         .form-field {
             border-top: 1px solid $green-color;
-            
             padding: 42px 0px 0px 0px;
-
 
             label {
                 font-size: 1rem;
@@ -71,7 +71,7 @@ $green-color: #3dcfb6;
                 transition: all 0.3s ease;
 
                 &:focus {
-                    outline: none;
+              
                     border: 1px solid white;
                 }
 
@@ -87,7 +87,9 @@ $green-color: #3dcfb6;
             }
         }
 
+      
         .privacy-policy {
+            padding-top: 10px;
             display: flex;
             align-items: center;
             font-size: 0.9rem;

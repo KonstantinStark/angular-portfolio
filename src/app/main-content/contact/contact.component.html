@@ -14,31 +14,38 @@
 
 
         <div class="contact-form">
-            <form>
+            <form (ngSubmit)="onSubmit()" >
                 <div class="form-field">
-                    <input type="text" id="name" placeholder="Wie ist Ihr Name?" />
+                    <input [(ngModel)]="contactData.name" type="text" id="name" name="name"
+                        placeholder="Wie ist Ihr Name?" />
                     <label for="name">Ups! Ihr Name scheint zu fehlen</label>
-
                 </div>
+
                 <div class="form-field">
-                    <input type="email" id="email" placeholder="Wie lautet Ihre E-Mail?" />
+                    <input [(ngModel)]="contactData.email" type="email" id="email" name="email"
+                        placeholder="Wie lautet Ihre E-Mail?" />
                     <label for="email">Hoppla! Ihre E-Mail ist erforderlich</label>
                 </div>
+
                 <div class="form-field">
-                    <textarea id="message" placeholder="Wie kann ich Ihnen helfen?"></textarea>
-                    <label for="message">Was möchten Sie entwickeln?</label>
+                    <textarea [(ngModel)]="contactData.message" id="message" name="message"
+                        placeholder="Wie kann ich Ihnen helfen?"></textarea>
+                    <label class="text-line" for="message">Was möchten Sie entwickeln?</label>
                 </div>
+
                 <div class="privacy-policy">
-                    <input type="checkbox" id="privacy" />
+                    <input type="checkbox" id="privacy" name="privacy" />
                     <label for="privacy">
                         Ich habe die <a href="#" class="privacy-link">Datenschutzbestimmungen</a> gelesen und erkläre
                         mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.
                     </label>
                 </div>
+
                 <div class="button-container">
-                    <button type="submit" class="custom-button">Hallo sagen :)</button>
+                    <button value="submit" type="submit" class="custom-button">Hallo sagen :)</button>
                 </div>
             </form>
         </div>
+
     </div>
 </section>
