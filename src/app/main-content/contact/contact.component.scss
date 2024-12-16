@@ -53,10 +53,11 @@ $green-color: #3dcfb6;
             .valid-text {
                 font-size: 18px;
                 color: #c56a6a;
+                position: absolute;
             }
 
             label {
-                font-size: 1rem;
+                font-size: 18px;
                 color: white;
                 margin-bottom: 5px;
                 display: block;
@@ -124,7 +125,6 @@ $green-color: #3dcfb6;
     }
 }
 
-
 .button-container {
     display: flex;
     gap: 30px;
@@ -165,7 +165,6 @@ $green-color: #3dcfb6;
         }
     }
 }
-
 
 @media (max-width: 1210px) {
     .contact-container {

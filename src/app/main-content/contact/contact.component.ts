@@ -15,15 +15,10 @@ export class ContactComponent {
     name: "",
     email: "",
     message: "",
+    terms: false,
   }
-
-  onSubmit(ngForm: NgForm) {
-    if (ngForm.valid && ngForm.submitted) {
-      console.log(this.contactData);
-    }
-  }
-
   terms: boolean = false;
+
   get img(): string {
     return this.terms
       ? 'assets/img/contact/Checked.png'
@@ -32,5 +27,11 @@ export class ContactComponent {
 
   toggleTerms() {
     this.terms = !this.terms;
+  }
+
+  onSubmit(ngForm: NgForm) {
+    if (ngForm.valid && ngForm.submitted) {
+      console.log(this.contactData);
+    }
   }
 }
