@@ -17,16 +17,15 @@ export class ContactComponent {
     message: "",
     terms: false,
   }
-  terms: boolean = false;
 
   get img(): string {
-    return this.terms
+    return this.contactData.terms
       ? 'assets/img/contact/Checked.png'
       : 'assets/img/contact/Default.png';
   }
 
   toggleTerms() {
-    this.terms = !this.terms;
+    this.contactData.terms = !this.contactData.terms;
   }
 
 

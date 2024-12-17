@@ -56,17 +56,20 @@
                     <div class="text-line"></div>
 
                     <div class="privacy-policy">
-                        <!-- <button #terms="ngModel" [(ngModel)]="contactData.terms" class="terms" type="button"
-                            (click)="toggleTerms()" required>
-                            <img src="{{ img }}" alt="" />
-                        </button>
+                        <div class="terms-container">
+                            <input #terms="ngModel" [(ngModel)]="contactData.terms" class="terms" type="checkbox"
+                                id="terms" name="terms" (click)="toggleTerms()" required>
+                            <label for="terms" class="terms-label">
+                                <img [src]="img" />
+                            </label>
+                        </div>
 
                         @if (!terms.valid && terms.touched && !terms.disabled) {
                         <div class="valid-text">Bitte Akzeptieren</div>
-                        } -->
+                        }
 
                         <label for="privacy">
-                            Ich habe die <a href="#" class="privacy-link">Datenschutzbestimmungen</a> gelesen und
+                            Ich habe die <a routerLink="legal-notice" class="privacy-link">Datenschutzbestimmungen</a> gelesen und
                             erkläre
                             mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.
                         </label>

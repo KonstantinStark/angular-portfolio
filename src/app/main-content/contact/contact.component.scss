@@ -7,7 +7,7 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
-    
+
 }
 
 .contact-container {
@@ -95,17 +95,6 @@ $green-color: #3dcfb6;
             }
         }
 
-        .terms {
-            background-color: transparent;
-            border: none;
-            cursor: pointer;
-
-            >img:hover {
-                background-color: rgba(61, 207, 183, 0.4);
-                border-radius: 100%;
-            }
-        }
-
         .privacy-policy {
             padding-top: 10px;
             display: flex;
@@ -124,6 +113,26 @@ $green-color: #3dcfb6;
             }
         }
     }
+}
+
+.terms-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.terms-label img {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.terms-label img:hover {
+    background-color: rgba(61, 207, 183, 0.4);
+    border-radius: 100%;
 }
 
 .button-container {
@@ -171,14 +180,12 @@ $green-color: #3dcfb6;
     .contact-container {
         flex-direction: column;
         align-items: center;
-        margin-top: px;        
+        margin-top: px;
     }
 
-    .contact-form-container {
-        
-    }
+    .contact-form-container {}
 
     .section {
-      height: 800px;
-}
+        height: 800px;
+    }
 }
