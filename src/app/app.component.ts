@@ -1,20 +1,20 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./shared/header/header.component";
 import { FooterComponent } from "./shared/footer/footer.component";
-
+import { PrivacyPolicyComponent } from "./main-content/privacy-policy/privacy-policy.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, RouterLink, HeaderComponent, FooterComponent, PrivacyPolicyComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 
 export class AppComponent {
-  title = 'angular-portfolio';
+  title = 'routing-app';
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(event: MouseEvent): void {
