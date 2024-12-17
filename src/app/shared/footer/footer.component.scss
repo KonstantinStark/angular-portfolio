@@ -10,7 +10,6 @@ footer {
     min-height: 150px;
     max-width: 1920px;
     width: 100%;
-    justify-self: center;
     font-family: "Karla";
 }
 
@@ -43,9 +42,12 @@ footer {
     margin: 5px 0;
 }
 
-.footer-center p {
-    color: $green-color;
-    font-family: 'FiraCode'
+
+.footer-center {
+    p {
+        color: $green-color;
+        font-family: 'FiraCode'
+    }
 }
 
 .footer-right {
