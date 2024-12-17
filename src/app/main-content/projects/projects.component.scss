@@ -259,3 +259,16 @@ $green-color: #3dcfb6;
         }
     }
 }
+
+@media (max-width: 1210px) {
+    .portfolio-container{
+        display: flex;
+        margin-bottom: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hover-image-container {
+        display: none;
+    }
+}

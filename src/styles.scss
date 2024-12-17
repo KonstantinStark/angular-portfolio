@@ -6,7 +6,6 @@ body::after {
     left: 0;
     background: radial-gradient(circle at var(--cursor-x, 50%) var(--cursor-y, 50%), #3dcfb6, transparent 13%);
     pointer-events: none;
-    z-index: 1000;
     mix-blend-mode: screen;
     will-change: background-position;
     opacity: 0.15;
