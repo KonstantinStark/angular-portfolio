@@ -235,8 +235,9 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: end;
     margin-right: 50px;
-
+    
     button {
+        cursor: pointer;
         font-family: 'Karla';
         font-size: 18px;
         background: none;
