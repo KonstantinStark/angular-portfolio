@@ -11,6 +11,16 @@ footer {
     font-family: "Karla";
 }
 
+.footer-logo {
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -91,6 +101,5 @@ footer {
 }
 
 @media (max-width: 1210px) {
-    footer {
-    }
+    footer {}
 }
