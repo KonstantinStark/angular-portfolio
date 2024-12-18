@@ -1,0 +1,45 @@
+$green-color: #3dcfb6;
+
+section {
+    max-height: 2080vh;
+    width: 100%;
+    background: radial-gradient(circle at right, #08463B 1%, #1C1C1C 90%);
+    font-family: 'FiraCode';
+    color: white;
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    min-width: 320px;
+}
+
+h1 {
+    font-size: 1.45rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    color: $green-color;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: $green-color;
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $green-color;
+    font-size: .85rem;
+}

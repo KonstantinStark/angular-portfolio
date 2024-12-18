@@ -64,16 +64,16 @@
                             </label>
                         </div>
 
-                        @if (!contactData.terms && terms.touched) {
-                        <div class="valid-text">Bitte Akzeptieren</div>
-                        }
-
-                        <label for="privacy">
+                        
+                        <label for="privacy" class="privacy-text">
                             Ich habe die <a routerLink="privacy-policy" class="privacy-link">Datenschutzbestimmungen</a> gelesen und
                             erkläre
                             mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.
                         </label>
                     </div>
+                    @if (!contactData.terms && contactForm.submitted) {
+                    <div class="valid-text-policy">Bitte akzeptieren Sie die Datenschutzbestimmungen.</div>
+                    }
 
                     <div class="button-container">
                         <button value="submit" type="submit" class="custom-button">Hallo sagen :)</button>

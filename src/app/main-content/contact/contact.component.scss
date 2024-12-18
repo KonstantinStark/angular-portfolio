@@ -47,15 +47,19 @@ $green-color: #3dcfb6;
 
 .contact-form {
     form {
-
+        .valid-text {
+            font-size: 18px;
+            color: #c56a6a;
+            position: absolute;
+        }
+        .valid-text-policy {
+            font-size: 18px;
+            color: #c56a6a;
+            position: absolute;
+            
+        }
         .form-field {
             padding: 42px 0px 0px 0px;
-
-            .valid-text {
-                font-size: 18px;
-                color: #c56a6a;
-                position: absolute;
-            }
 
             label {
                 font-size: 18px;
@@ -110,6 +114,9 @@ $green-color: #3dcfb6;
             .privacy-link {
                 color: $green-color;
                 text-decoration: none;
+            }
+            .privacy-text {
+                padding-left: 24px;
             }
         }
     }
@@ -183,9 +190,7 @@ input[type="checkbox"] {
         margin-top: px;
     }
 
-    .contact-form-container {
-        
-    }
+    .contact-form-container {}
 
     .section {
         height: 800px;
