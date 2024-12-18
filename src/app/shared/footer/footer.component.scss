@@ -4,7 +4,7 @@ $green-color: #3dcfb6;
 footer {
     background-color: #1c1c1c;
     color: #FFFFFF;
-    padding: 112px 112px 24px 112px;
+    padding: 32px 112px 24px 112px;
     min-height: 150px;
     max-width: 1920px;
     width: 100%;
@@ -13,9 +13,9 @@ footer {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
     width: 100%;
     height: 100%;

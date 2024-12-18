@@ -1,0 +1,31 @@
+$green-color: #3dcfb6;
+
+section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg, #1C1C1C 30%, #08463B 90%);
+    font-family: 'FiraCode';
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+div {
+    font-size: 24px;
+    height: 78vh;
+    width: 100%;
+    max-width: 1920px;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 5%;
+    font-size: 48px;
+    color: $green-color;
+    font-family: "Karla";
+}
+
+a {
+    color: $green-color;
+    text-decoration: none;
+}
