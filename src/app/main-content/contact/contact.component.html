@@ -21,7 +21,7 @@
                         <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" type="text" id="name"
                             name="name" placeholder="Wie ist Ihr Name?" required />
 
-                        @if (!name.valid && name.touched && !name.disabled) {
+                        @if (!name.valid && (name.touched || contactForm.submitted)) {
                         <div class="valid-text">Ups! Ihr Name scheint zu fehlen</div>
                         }
                         <!-- <label for="name">Ups! Ihr Name scheint zu fehlen</label> -->
@@ -33,7 +33,7 @@
                             placeholder="Wie lautet Ihre E-Mail?" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
 
-                        @if (!email.valid && email.touched && !email.disabled) {
+                        @if (!email.valid && (email.touched || contactForm.submitted)) {
                         <div class="valid-text">Hoppla! Ihre E-Mail ist erforderlich</div>
                         }
                         <!-- <label for="email">Hoppla! Ihre E-Mail ist erforderlich</label> -->
@@ -46,7 +46,7 @@
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="text-line"
                             id="message" name="message" placeholder="Wie kann ich Ihnen helfen?" required></textarea>
 
-                        @if (!message.valid && message.touched && !message.disabled) {
+                        @if (!message.valid && (message.touched || contactForm.submitted)) {
                         <div class="valid-text">Was möchten Sie entwickeln?</div>
                         }
                         <!-- <label class="text-line" for="message">Hallo Konstantin, ich bin interessiert an...</label> -->
@@ -64,9 +64,10 @@
                             </label>
                         </div>
 
-                        
+
                         <label for="privacy" class="privacy-text">
-                            Ich habe die <a routerLink="privacy-policy" class="privacy-link" (click)="scrollToTop()">Datenschutzbestimmungen</a> gelesen und
+                            Ich habe die <a routerLink="privacy-policy" class="privacy-link"
+                                (click)="scrollToTop()">Datenschutzbestimmungen</a> gelesen und
                             erkläre
                             mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden.
                         </label>

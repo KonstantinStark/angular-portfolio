@@ -29,7 +29,6 @@ export class ContactComponent {
     this.contactData.terms = !this.contactData.terms;
   }
 
-
   onSubmit(ngForm: NgForm) {
     if (ngForm.valid && ngForm.submitted) {
       console.log(this.contactData);
