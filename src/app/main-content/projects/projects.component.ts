@@ -18,29 +18,42 @@ export class ProjectsComponent {
   projects = [
     {
       number: '01',
-      name: 'Join',
-      skill: 'HTML | CSS | JavaScript | Firebase',
-      image: './assets/img/projects/join.png',
-      imageOverlay: './assets/img/projects/joinOverlay.png',
-      description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
-      skillIcons: [
-        { image: './assets/img/projects/html.png' },
-        { image: './assets/img/projects/css.png' },
-        { image: './assets/img/projects/js.png' },
-        { image: './assets/img/projects/firebase.png' },
-      ],
-    },
-    {
-      number: '02',
       name: 'El Pollo Loco',
-      skill: 'HTML | CSS | JavaScript',
+      skill: 'JavaScript | HTML | CSS ',
       image: './assets/img/projects/loco.png',
       imageOverlay: './assets/img/projects/locoOverlay.png',
       description: 'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
       skillIcons: [
+        { image: './assets/img/projects/js.png' },
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
+      ],
+    },
+    {
+      number: '02',
+      name: 'Join',
+      skill: 'JavaScript | Firebase | HTML | CSS ',
+      image: './assets/img/projects/join.png',
+      imageOverlay: './assets/img/projects/joinOverlay.png',
+      description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+      skillIcons: [
         { image: './assets/img/projects/js.png' },
+        { image: './assets/img/projects/firebase.png' },
+        { image: './assets/img/projects/html.png' },
+        { image: './assets/img/projects/css.png' },
+      ],
+    },
+    {
+      number: '03',
+      name: 'Pokedex',
+      skill: 'JavaScript | Rest-Api | HTML | CSS ',
+      image: './assets/img/projects/loco.png',
+      imageOverlay: './assets/img/projects/locoOverlay.png',
+      description: 'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
+      skillIcons: [
+        { image: './assets/img/projects/js.png' },
+        { image: './assets/img/projects/html.png' },
+        { image: './assets/img/projects/css.png' },
       ],
     }
   ];
