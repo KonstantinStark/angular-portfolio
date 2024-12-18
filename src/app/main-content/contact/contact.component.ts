@@ -35,4 +35,11 @@ export class ContactComponent {
       console.log(this.contactData);
     }
   }
+
+  scrollToTop(): void {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
 }
