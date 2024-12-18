@@ -58,13 +58,13 @@
                     <div class="privacy-policy">
                         <div class="terms-container">
                             <input #terms="ngModel" [(ngModel)]="contactData.terms" class="terms" type="checkbox"
-                                id="terms" name="terms" (click)="toggleTerms()" required>
+                                id="terms" name="terms" required>
                             <label for="terms" class="terms-label">
                                 <img [src]="img" />
                             </label>
                         </div>
 
-                        @if (!terms.valid && terms.touched && !terms.disabled) {
+                        @if (!contactData.terms && terms.touched) {
                         <div class="valid-text">Bitte Akzeptieren</div>
                         }
 

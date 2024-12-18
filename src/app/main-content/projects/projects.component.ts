@@ -47,8 +47,8 @@ export class ProjectsComponent {
       number: '03',
       name: 'Pokedex',
       skill: 'JavaScript | Rest-Api | HTML | CSS ',
-      image: './assets/img/projects/loco.png',
-      imageOverlay: './assets/img/projects/locoOverlay.png',
+      image: './assets/img/projects/poke.png',
+      imageOverlay: './assets/img/projects/pokeOverlay.png',
       description: 'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
       skillIcons: [
         { image: './assets/img/projects/js.png' },
