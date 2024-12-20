@@ -4,6 +4,7 @@ import { provideRouter } from '@angular/router';
 import { MainContentComponent } from './main-content/main-content.component';
 import { PrivacyPolicyComponent } from './main-content/privacy-policy/privacy-policy.component';
 import { LegalNoticeComponent } from './main-content/legal-notice/legal-notice.component';
+import { provideHttpClient } from '@angular/common/http';
 
 export const routes: Routes = [
   { path: '', component: MainContentComponent },
@@ -12,5 +13,6 @@ export const routes: Routes = [
 ];
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes)],
+  providers: [provideRouter(routes), provideHttpClient()],
+  
 };
