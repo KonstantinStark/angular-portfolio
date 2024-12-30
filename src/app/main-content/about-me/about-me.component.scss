@@ -122,9 +122,37 @@
         top: 120px;
     }
 
-    .about-me-container[_ngcontent-ng-c2241248689] {
+    .about-me-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-container {
+        display: flex;
+    }
+
+    .main-image {
+        width: 100%;
+        position: relative;
+    }
+
+    .background-image {
+        width: 100%;
+        height: auto;
+        top: 128px;
+        right: -1px;
+    }
+
+    h1 {
+        font-size: 40px!important;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 35px !important;
     }
 }
