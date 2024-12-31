@@ -1,19 +1,17 @@
 $green-color: #3dcfb6;
 
 section {
-    padding-top: 100px;
-    max-height: 2080vh;
-    max-width: 1440%;
+    max-width: 1440px;
     width: 100%;
+    padding-top: 100px;
     font-family: 'FiraCode';
     color: white;
     display: flex;
+    justify-content: center;
 }
 
 .container {
-    margin: 0 auto;
-    padding: 20px;
-    min-width: 320px;
+    margin: 10px
 }
 
 h1 {
