@@ -3,11 +3,11 @@ $green-color: #3dcfb6;
 .section {
     width: 100%;
     height: 581px;
-    background-color: #1c1c1c;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
-   
+    background: radial-gradient(80% 41% at -30% 40%,#08463b,rgba(0, 0, 0, 0))
+    
 }
 
 .portfolio-container {
@@ -101,7 +101,7 @@ $green-color: #3dcfb6;
     border: 1px solid $green-color;
     border-radius: 40px;
     overflow: hidden;
-   
+
 
     .coverlay-container {
         display: flex;
@@ -236,7 +236,7 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: end;
     margin-right: 50px;
-    
+
     button {
         cursor: pointer;
         font-family: 'Karla';
@@ -263,13 +263,14 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 1210px) {
-    .portfolio-container{
+    .portfolio-container {
         display: flex;
         margin-bottom: 0px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+
     .hover-image-container {
         display: none;
     }

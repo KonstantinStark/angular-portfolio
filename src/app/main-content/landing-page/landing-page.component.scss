@@ -1,9 +1,9 @@
 $green-color: #3dcfb6;
 
 section {
+    position: relative;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(45deg, #1C1C1C 30%, #08463B 90%);
 }
 
 .titel-text {
@@ -140,7 +140,7 @@ h2 {
     justify-content: center;
     gap: 20px;
     position: absolute;
-    top: 87.7%;
+    top: 86.8%;
     left: 3.2%;
     transform: translateY(-50%);
     z-index: 2;

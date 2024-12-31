@@ -6,7 +6,7 @@ $green-color: #3dcfb6;
     font-family: 'Karla';
     display: flex;
     justify-content: center;
-    background: radial-gradient(circle at left, #08463B 1%, #1C1C1C 19%);
+    
 }
 
 .container {
@@ -247,10 +247,6 @@ $green-color: #3dcfb6;
     .skill {
         height: 300px;
         width: 500px;
-    }
-
-    .section {
-        background: radial-gradient(circle at left, #08463B 1%, #1C1C1C 40%);
     }
 
     .skill-set-container {
