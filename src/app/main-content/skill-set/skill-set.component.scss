@@ -2,11 +2,10 @@ $green-color: #3dcfb6;
 
 .section {
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Karla';
     display: flex;
     justify-content: center;
-    
 }
 
 .container {
@@ -258,6 +257,10 @@ $green-color: #3dcfb6;
     .skill-icon-container {
         margin-top: 80px;
     }
+
+    .section {
+        height: 126vh;
+    }
 }
 
 @media (max-width: 500px) {
@@ -280,10 +283,24 @@ $green-color: #3dcfb6;
     .skill-icon-container {
         padding-left: 25px;
     }
+    .section {
+        height: 139vh;
+    }
+    
 }
 
 @media (max-width: 430px) {
     .skill {
         width: 300px;
+    }
+
+    .section {
+        height: 172vh;
+    }
+}
+
+@media (max-width: 419px) {
+       .section {
+        height: 186vh;
     }
 }

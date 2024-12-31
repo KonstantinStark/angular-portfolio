@@ -9,9 +9,9 @@ $green-color: #3dcfb6;
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    max-width: 1920px;
-    gap: 450px;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
 }
 
 .navbar {
@@ -369,46 +369,4 @@ $green-color: #3dcfb6;
         position: absolute;
         left: 5%
     }
-}
-
-@media (max-width: 1351px) {
-    .header-content {
-        gap: 380px;
-    }
-
-}
-
-@media (max-width: 1281px) {
-    .header-content {
-        gap: 300px;
-    }
-
-}
-
-@media (max-width: 1201px) {
-    .header-content {
-        gap: 250px;
-    }
-
-}
-
-@media (max-width: 1151px) {
-    .header-content {
-        gap: 200px;
-    }
-
-}
-
-@media (max-width: 1101px) {
-    .header-content {
-        gap: 150px;
-    }
-
-}
-
-@media (max-width: 1051px) {
-    .header-content {
-        gap: 100px;
-    }
-
 }

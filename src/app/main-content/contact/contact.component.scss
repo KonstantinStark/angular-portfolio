@@ -192,7 +192,7 @@ input[type="checkbox"] {
     // .contact-form-container {}
 
     .section {
-        height: 800px;
+        height: 103vh;
     }
 }
 
@@ -200,4 +200,22 @@ input[type="checkbox"] {
     h1 {
         font-size: 35px !important;
     } 
+}
+
+@media (max-width: 565px) {
+    h1 {
+        font-size: 30px !important;
+    } 
+}
+
+@media (max-width: 325px) {
+    h1 {
+        font-size: 28px !important;
+    } 
+}
+
+@media (max-width: 332px) {
+    .section {
+        height: 106vh;
+    }
 }
