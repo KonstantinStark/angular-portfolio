@@ -14,7 +14,7 @@
                 <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
                     (mouseleave)="hideImage()" (click)="openOverlay(project)">
                     <div class="project-name">
-                        <span>{{ project.name }}</span>
+                        <span class="name-color">{{ project.name }}</span>
                         <span>{{ project.skill }}</span>
                     </div>
                 </div>

@@ -62,9 +62,15 @@ $green-color: #3dcfb6;
     }
 
     .project-name span {
-        font-size: 24px;
+        font-size: 16px;
         color: white;
     }
+}
+
+.name-color {
+    color: $green-color!important;
+    font-size: 24px!important;
+    font-weight: 800;
 }
 
 .hover-image-container {
@@ -273,5 +279,16 @@ $green-color: #3dcfb6;
 
     .hover-image-container {
         display: none;
+    }
+}
+
+@media (max-width: 795px) {
+    h1 {
+        font-size: 35px !important;
+    }
+
+    .project-name {
+        flex-direction: column!important;
+        margin-top: -16px;
     }
 }

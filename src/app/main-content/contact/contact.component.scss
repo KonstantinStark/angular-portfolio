@@ -195,3 +195,9 @@ input[type="checkbox"] {
         height: 800px;
     }
 }
+
+@media (max-width: 795px) {
+    h1 {
+        font-size: 35px !important;
+    } 
+}
