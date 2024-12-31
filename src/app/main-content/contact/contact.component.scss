@@ -196,6 +196,12 @@ input[type="checkbox"] {
     }
 }
 
+@media (max-width: 796px) {
+    .section {
+        height: 95vh;
+    }
+}
+
 @media (max-width: 795px) {
     h1 {
         font-size: 35px !important;
