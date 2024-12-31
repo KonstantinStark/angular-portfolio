@@ -6,8 +6,7 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
-    background: radial-gradient(80% 41% at -30% 40%,#08463b,rgba(0, 0, 0, 0))
-    
+    background: radial-gradient(80% 41% at -30% 40%, #08463b, rgba(0, 0, 0, 0))
 }
 
 .portfolio-container {
@@ -68,8 +67,8 @@ $green-color: #3dcfb6;
 }
 
 .name-color {
-    color: $green-color!important;
-    font-size: 24px!important;
+    color: $green-color !important;
+    font-size: 24px !important;
     font-weight: 800;
 }
 
@@ -283,12 +282,53 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 795px) {
-    h1 {
-        font-size: 30px !important;
+    .h1-project {
+        font-size: 26px !important;
     }
 
     .project-name {
-        flex-direction: column!important;
+        flex-direction: column !important;
         margin-top: -16px;
     }
+}
+
+@media (max-width: 1000px) {
+    .coverlay-container {
+        flex-direction: column-reverse !important;
+    }
+
+    .overlay {
+        height: 100%;
+        padding: 0px;
+    }
+
+    .selectedProject-name {
+        font-size: 26px;
+    }
+
+    .selectedProject-number {
+        font-size: 80px !important;
+    }
+}
+
+@media (max-width: 545px) {
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .selectedProject-name {
+        font-size: 26px;
+    }
+
+    .selectedProject-number {
+        font-size: 64px !important;
+    }
+
+    .coverlay-container {
+        align-items: start!important;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+
 }

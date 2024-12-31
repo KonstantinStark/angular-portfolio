@@ -5,7 +5,7 @@
             <div>
                 <h2>Portfolio</h2>
             </div>
-            <h1>Ausgewählte Projekte</h1>
+            <h1 class="h1-project">Ausgewählte Projekte</h1>
             <p>Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit <br> Projekten, um meine
                 Fähigkeiten
                 in Aktion zu sehen.</p>
@@ -31,8 +31,8 @@
         <div class="coverlay-container">
             <div class="left-container">
                 <div>
-                    <h1>{{ selectedProject.number }}</h1>
-                    <h2>{{ selectedProject.name }}</h2>
+                    <h1 class="selectedProject-number">{{ selectedProject.number }}</h1>
+                    <h2 class="selectedProject-name">{{ selectedProject.name }}</h2>
                     <h3>Worum geht es bei diesem Projekt?</h3>
                     <p>{{ selectedProject.description }}</p>
                     @for (projects of selectedProject.skillIcons; track $index) {

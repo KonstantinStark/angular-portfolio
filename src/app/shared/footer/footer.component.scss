@@ -32,6 +32,7 @@ footer {
 
 .footer-left,
 .footer-center,
+.footer-bottom,
 .footer-right {
     text-align: center;
 }
@@ -51,6 +52,14 @@ footer {
 
 
 .footer-center {
+    p {
+        color: $green-color;
+        font-family: 'FiraCode'
+    }
+}
+
+.footer-bottom {
+    display: none;
     p {
         color: $green-color;
         font-family: 'FiraCode'
@@ -99,6 +108,13 @@ footer {
     }
 }
 
-// @media (max-width: 1210px) {
-//     footer {}
-// }
+@media (max-width: 540px) {
+    .footer-center {
+        display: none;
+    }
+
+.footer-bottom {
+    display: block;
+    padding-top: 20px;
+}
+}
