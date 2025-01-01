@@ -34,7 +34,7 @@
                     <h1 class="selectedProject-number">{{ selectedProject.number }}</h1>
                     <h2 class="selectedProject-name">{{ selectedProject.name }}</h2>
                     <h3>Worum geht es bei diesem Projekt?</h3>
-                    <p>{{ selectedProject.description }}</p>
+                    <p class="selectedProject-description">{{ selectedProject.description }}</p>
                     @for (projects of selectedProject.skillIcons; track $index) {
                     <img class="icon" src="{{ projects.image }}">
                     }

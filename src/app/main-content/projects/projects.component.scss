@@ -325,10 +325,35 @@ $green-color: #3dcfb6;
     }
 
     .coverlay-container {
-        align-items: start!important;
+        align-items: start !important;
     }
+
     .button-container {
         flex-direction: column;
     }
+}
 
+@media (max-width: 490px) {
+    .next-btn-container {
+        position: absolute;
+        top: 95%;
+        right: -7%;
+    }
+
+    .button-container {
+        padding-top: 72px !important;
+        ;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    .selectedProject-name {
+        font-size: 24px;
+    }
+
+    .selectedProject-number {
+        font-size: 56px !important;
+    }
 }
