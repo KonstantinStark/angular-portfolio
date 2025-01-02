@@ -99,7 +99,6 @@ $green-color: #3dcfb6;
     max-width: 1248px;
     min-width: 300px;
     width: 100%;
-    height: 656px;
     background: linear-gradient(45deg, #1C1C1C 30%, #08463B 90%);
     padding: 30px;
     border: 1px solid $green-color;
@@ -303,7 +302,7 @@ $green-color: #3dcfb6;
     }
 
     .overlay {
-        height: 18%;
+        height: 19%;
         padding: 0px;
         width: auto;
     }
@@ -325,7 +324,7 @@ $green-color: #3dcfb6;
 
 @media (max-width: 428px) {
     .overlay {
-        height: 15%!important;
+        height: 15.5%!important;
     }
 }
 
@@ -371,7 +370,7 @@ $green-color: #3dcfb6;
 @media (max-width: 490px) {
     .next-btn-container {
         position: absolute;
-        top: 95%;
+        top: 94%;
         right: 0%;
     }
 

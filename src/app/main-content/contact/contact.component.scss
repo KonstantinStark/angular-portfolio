@@ -50,12 +50,14 @@ $green-color: #3dcfb6;
             color: #c56a6a;
             position: absolute;
         }
+
         .valid-text-policy {
             font-size: 18px;
             color: #c56a6a;
             position: absolute;
-            
+
         }
+
         .form-field {
             padding: 42px 0px 0px 0px;
 
@@ -113,6 +115,7 @@ $green-color: #3dcfb6;
                 color: $green-color;
                 text-decoration: none;
             }
+
             .privacy-text {
                 padding-left: 24px;
             }
@@ -184,10 +187,8 @@ input[type="checkbox"] {
     .contact-container {
         flex-direction: column;
         align-items: center;
-        margin-top: px;
+        margin-top: 0px;
     }
-
-    // .contact-form-container {}
 
     .section {
         height: 103vh;
@@ -203,19 +204,19 @@ input[type="checkbox"] {
 @media (max-width: 795px) {
     h1 {
         font-size: 35px !important;
-    } 
+    }
 }
 
 @media (max-width: 565px) {
     h1 {
         font-size: 30px !important;
-    } 
+    }
 }
 
 @media (max-width: 325px) {
     h1 {
         font-size: 26px !important;
-    } 
+    }
 }
 
 @media (max-width: 332px) {
