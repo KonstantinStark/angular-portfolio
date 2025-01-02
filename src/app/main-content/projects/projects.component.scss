@@ -12,7 +12,7 @@ $green-color: #3dcfb6;
 .portfolio-container {
     display: flex;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 
     .portfolio h2 {
         font-size: 24px;
@@ -269,7 +269,6 @@ $green-color: #3dcfb6;
 @media (max-width: 1210px) {
     .portfolio-container {
         display: flex;
-        margin-bottom: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -303,7 +302,7 @@ $green-color: #3dcfb6;
     }
 
     .overlay {
-        height: 19%;
+        height: 17.7%;
         padding: 0px;
         width: auto;
     }
