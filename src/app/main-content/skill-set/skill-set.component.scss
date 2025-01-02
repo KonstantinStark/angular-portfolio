@@ -2,7 +2,7 @@ $green-color: #3dcfb6;
 
 .section {
     width: 100%;
-    height: 80vh;
+   padding-bottom: 100px;
     font-family: 'Karla';
     display: flex;
     justify-content: center;
@@ -251,10 +251,6 @@ $green-color: #3dcfb6;
     .skill-icon-container {
         margin-top: 80px;
     }
-
-    // .section {
-    //     height: 134vh;
-    // }
 }
 
 @media (max-width: 532px) {
@@ -277,25 +273,10 @@ $green-color: #3dcfb6;
     .skill-icon-container {
         padding-left: 25px;
     }
-
-    // .section {
-    //     height: 146vh;
-    // }
-
 }
 
 @media (max-width: 430px) {
     .skill {
         width: 300px;
     }
-
-    // .section {
-    //     height: 175vh;
-    // }
 }
-
-// @media (max-width: 370px) {
-//     .section {
-//         height: 177vh;
-//     }
-// }
