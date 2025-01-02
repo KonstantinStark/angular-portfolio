@@ -1,25 +1,28 @@
 <footer>
-    <div class="footer-container">
-        <div class="footer-left">
-            <img src="./assets/img/footer/starklogo.png" class="footer-logo" (click)="scrollToTop()">
-            <p>Web Developer</p>
-            <p>Bayreuth, Germany</p>
-        </div>
+    <div>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="./assets/img/footer/starklogo.png" class="footer-logo" (click)="scrollToTop()">
+                <p>Web Developer</p>
+                <p>Bayreuth, Germany</p>
+            </div>
 
-        <div class="footer-center">
+            <div class="footer-center">
+                <p>© Konstantin Stark 2024</p>
+            </div>
+
+            <div class="footer-right">
+                <ul>
+                    <li><a href="mailto:konstantin.stark.dev@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="https://github.com/KonstantinStark" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/konstantin-stark-dev" target="_blank">LinkedIn</a></li>
+                    <li><a routerLink="legal-notice" routerLinkActive="active" (click)="scrollToTop()">Impressum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
             <p>© Konstantin Stark 2024</p>
         </div>
-
-        <div class="footer-right">
-            <ul>
-                <li><a href="mailto:konstantin.stark.dev@gmail.com" target="_blank">Email</a></li>
-                <li><a href="https://github.com/KonstantinStark" target="_blank">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/konstantin-stark-dev" target="_blank">LinkedIn</a></li>
-                <li><a routerLink="legal-notice" routerLinkActive="active" (click)="scrollToTop()">Impressum</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>© Konstantin Stark 2024</p>
     </div>
 </footer>

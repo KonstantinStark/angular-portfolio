@@ -263,7 +263,7 @@ $green-color: #3dcfb6;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 532px) {
     h1 {
         font-size: 40px !important;
     }
@@ -283,10 +283,11 @@ $green-color: #3dcfb6;
     .skill-icon-container {
         padding-left: 25px;
     }
+
     .section {
         height: 139vh;
     }
-    
+
 }
 
 @media (max-width: 430px) {
@@ -300,7 +301,7 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 419px) {
-       .section {
+    .section {
         height: 190vh;
     }
 }
