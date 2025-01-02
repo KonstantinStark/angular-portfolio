@@ -14,20 +14,28 @@ body::after {
     z-index: 1001;
 }
 
+html {
+    position: relative;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 .app-root {
     background-image: linear-gradient(to top right, #000 50%, #0f5348);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    // max-width: 1440px;
 }
 
 @font-face {
