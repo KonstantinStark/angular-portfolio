@@ -2,6 +2,7 @@ $green-color: #3dcfb6;
 
 .section {
     width: 100%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
@@ -33,7 +34,7 @@ $green-color: #3dcfb6;
 }
 
 .projects {
-    margin-top: 20px;
+    margin-top: 50px;
 
     .project {
         max-width: 880px;
@@ -268,7 +269,7 @@ $green-color: #3dcfb6;
 @media (max-width: 1210px) {
     .portfolio-container {
         display: flex;
-        margin-bottom: 0px;
+        margin-bottom: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;

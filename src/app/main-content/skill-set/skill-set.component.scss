@@ -10,7 +10,6 @@ $green-color: #3dcfb6;
 
 .container {
     display: flex;
-    gap: 200px;
     max-width: 1232.35px;
     width: 100%;
 }
@@ -237,8 +236,6 @@ $green-color: #3dcfb6;
     .container {
         flex-direction: column;
         align-items: center;
-        margin-top: 50px;
-        gap: 0px;
     }
 
     .skill {
@@ -282,7 +279,7 @@ $green-color: #3dcfb6;
     }
 
     .section {
-        height: 139vh;
+        height: 146vh;
     }
 
 }
@@ -293,12 +290,12 @@ $green-color: #3dcfb6;
     }
 
     .section {
-        height: 185vh;
+        height: 175vh;
     }
 }
 
-@media (max-width: 419px) {
+@media (max-width: 370px) {
     .section {
-        height: 200vh;
+        height: 177vh;
     }
 }
