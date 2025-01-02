@@ -2,7 +2,7 @@ $green-color: #3dcfb6;
 
 .section {
     width: 100%;
-   padding-bottom: 100px;
+    padding-bottom: 100px;
     font-family: 'Karla';
     display: flex;
     justify-content: center;
@@ -142,7 +142,7 @@ $green-color: #3dcfb6;
     height: 129px;
     position: absolute;
     bottom: 134px;
-    left: 43%;
+    left: -4.4%;
     transform: translateX(-50%);
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -157,14 +157,14 @@ $green-color: #3dcfb6;
         position: absolute;
         width: 0;
         height: 0;
-        bottom: -19px; // Position unterhalb der Blase
+        bottom: -19px;
         left: 48.5%;
         transform: translateX(-50%);
         border-width: 10px;
         border-style: solid;
         border-color: white transparent transparent transparent;
         border-radius: 5px;
-        z-index: 11; // Über allem
+        z-index: 11;
     }
 }
 
@@ -233,6 +233,10 @@ $green-color: #3dcfb6;
 
 
 @media (max-width: 1210px) {
+    .bubble {
+        left: 43.8%;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
@@ -266,6 +270,9 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 520px) {
+    .bubble {
+        left: 30%;
+    }
     .skill {
         width: 400px;
     }
@@ -276,6 +283,9 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 430px) {
+    .bubble {
+        left: -1.2%;
+    }
     .skill {
         width: 300px;
     }

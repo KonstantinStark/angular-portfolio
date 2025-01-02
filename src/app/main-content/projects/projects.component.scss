@@ -6,7 +6,7 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
-    background: radial-gradient(80% 41% at -30% 40%, #08463b, rgba(0, 0, 0, 0))
+    background: radial-gradient(70% 50% at -30% 48%,#08463b,rgba(0, 0, 0, 0));
 }
 
 .portfolio-container {
@@ -324,19 +324,19 @@ $green-color: #3dcfb6;
 
 @media (max-width: 428px) {
     .overlay {
-        height: 15.5%!important;
+        height: 15.5% !important;
     }
 }
 
 @media (max-width: 339px) {
     .overlay {
-        height: 16%!important;
+        height: 16% !important;
     }
 }
 
 @media (max-width: 325px) {
     .overlay {
-        height: 15.5%!important;
+        height: 15.5% !important;
     }
 }
 
