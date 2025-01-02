@@ -12,3 +12,4 @@ import { NavbarComponent } from '../landing-page/navbar/navbar.component';
 export class PrivacyPolicyComponent {
 
 }
+
