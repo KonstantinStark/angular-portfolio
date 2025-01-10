@@ -5,8 +5,8 @@
                 <div class="toggle-switch">
                     <input type="checkbox" id="language-switch" />
                     <label for="language-switch">
-                        <span class="switch-text en">EN</span>
-                        <span class="switch-text de">DE</span>
+                        <span class="switch-text en" (click)="translate.switchLanguage('en')">EN</span>
+                        <span class="switch-text de" (click)="translate.switchLanguage('de')">DE</span>
                     </label>
                 </div>
                 <a href="#about-me">Über mich</a>
