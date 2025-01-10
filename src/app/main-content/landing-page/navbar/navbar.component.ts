@@ -16,5 +16,7 @@ export class NavbarComponent {
     this.menuHidden = !this.menuHidden;
   }
 
-  translate = inject(TranslateService)
+  switchLanguage(language: string) {
+    this['translationService'].switchLanguage(language);
+  }
 }
