@@ -1,5 +1,15 @@
 {
     "aboutMe": "Über mich",
     "skills": "Fertigkeiten",
-    "projects": "Projekte"
+    "projects": "Projekte",
+
+    "frontendDeveloper": "Frontend-Entwickler",
+    "name": "Konstantin Stark",
+    "myProjects": "Meine Projekte",
+    "contact": "Kontakt",
+    
+    "frontendDeveloper": "Frontend-Entwickler",
+    "availableForRemoteWork": "Verfügbar für Remote-Arbeit",
+    "livingNearBayreuth": "Wohnhaft nähe Bayreuth",
+    "readyForNewChallenges": "Bereit für neue Herausforderungen"
 }
