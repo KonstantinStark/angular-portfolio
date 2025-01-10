@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslationService } from '../../../translation.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,5 +16,5 @@ export class NavbarComponent {
     this.menuHidden = !this.menuHidden;
   }
 
-  translate = inject(TranslateService)
+  translates = inject(TranslationService)
 }
