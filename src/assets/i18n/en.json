@@ -1,14 +1,13 @@
 {
     "aboutMe": "About Me",
     "skills": "Skills",
-    "projects": "Projects",
+    "project": "Projects",
 
     "frontendDeveloper": "Frontend Developer",
     "name": "Konstantin Stark",
     "myProjects": "My Projects",
     "contact": "Contact",
 
-    "frontendDeveloper": "Frontend Developer",
     "availableForRemoteWork": "Available for remote work",
     "livingNearBayreuth": "Living near Bayreuth",
     "readyForNewChallenges": "Ready for new challenges",

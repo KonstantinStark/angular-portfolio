@@ -1,14 +1,13 @@
 {
     "aboutMe": "Über mich",
     "skills": "Fertigkeiten",
-    "projects": "Projekte",
+    "project": "Projekte",
 
-    "frontendDeveloper": "Frontend-Entwickler",
+    "frontendDeveloper": "Frontend Entwickler",
     "name": "Konstantin Stark",
     "myProjects": "Meine Projekte",
     "contact": "Kontakt",
 
-    "frontendDeveloper": "Frontend-Entwickler",
     "availableForRemoteWork": "Verfügbar für Remote-Arbeit",
     "livingNearBayreuth": "Wohnhaft nähe Bayreuth",
     "readyForNewChallenges": "Bereit für neue Herausforderungen",
@@ -20,7 +19,6 @@
     "personality": "Aufgeschlossen, enthusiastisch und kreativ – der Persönlichkeitstyp 'ENFP' beschreibt mich treffend.",
     "challenge": "Offen für neue Herausforderungen und ständig auf der Suche nach Möglichkeiten, meine Kenntnisse und Fähigkeiten weiter auszubauen.",
 
-    "portfolioTitle": "Portfolio",
     "selectedProjects": "Ausgewählte Projekte",
     "projectDescription": "Entdecke meine Arbeiten und erlebe meine Fähigkeiten in Aktion.",
     "projectSkill": "Fähigkeiten",
