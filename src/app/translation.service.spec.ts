@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TranslationComponent } from './translation.component';
+import { TranslationService } from './translation.service';
 
 describe('TranslationComponent', () => {
-  let component: TranslationComponent;
-  let fixture: ComponentFixture<TranslationComponent>;
+  let component: TranslationService;
+  let fixture: ComponentFixture<TranslationService>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TranslationComponent]
+      imports: [TranslationService]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(TranslationComponent);
+    fixture = TestBed.createComponent(TranslationService);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
