@@ -7,9 +7,35 @@
     "name": "Konstantin Stark",
     "myProjects": "Meine Projekte",
     "contact": "Kontakt",
-    
+
     "frontendDeveloper": "Frontend-Entwickler",
     "availableForRemoteWork": "Verfügbar für Remote-Arbeit",
     "livingNearBayreuth": "Wohnhaft nähe Bayreuth",
-    "readyForNewChallenges": "Bereit für neue Herausforderungen"
+    "readyForNewChallenges": "Bereit für neue Herausforderungen",
+    "introduction": "Vorstellung",
+
+    "aboutMe": "Über mich",
+    "aboutMeText": "Hi, ich bin ein kreativer Entwickler aus der Nähe von Bayreuth. Programmieren ist nicht nur eine technische Aufgabe - es ist ein kreativer Prozess. Mit einem Kopf voller Ideen und einem Hang dazu, auch mal unkonventionelle Wege zu gehen, finde ich Lösungen, die andere vielleicht übersehen. Dabei ist es mein Ziel, durch kreative Ansätze Lösungen zu entwickeln, die sowohl praktisch als auch innovativ sind.",
+    "location": "Im Kulmbacher und Bayreuther Landkreis bin ich flexibel einsetzbar, am effektivsten jedoch remote, da ich dort meine Arbeitsweise und Umgebung ideal gestalten kann.",
+    "personality": "Aufgeschlossen, enthusiastisch und kreativ – der Persönlichkeitstyp 'ENFP' beschreibt mich treffend.",
+    "challenge": "Offen für neue Herausforderungen und ständig auf der Suche nach Möglichkeiten, meine Kenntnisse und Fähigkeiten weiter auszubauen.",
+
+    "portfolioTitle": "Portfolio",
+    "selectedProjects": "Ausgewählte Projekte",
+    "projectDescription": "Entdecke meine Arbeiten und erlebe meine Fähigkeiten in Aktion.",
+    "projectSkill": "Fähigkeiten",
+    "projectDetails": "Worum geht es bei diesem Projekt?",
+    "nextProjectButton": "Nächstes Projekt",
+
+    "projectDetails": {
+        "elPolloLoco": {
+        "description": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
+        },
+        "join": {
+        "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+        },
+        "pokedex": {
+        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
+        }
+    }
 }

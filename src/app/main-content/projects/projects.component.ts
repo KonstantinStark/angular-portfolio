@@ -1,10 +1,12 @@
+import { Component, inject } from '@angular/core';
+import { TranslationService } from '../../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule,],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -12,8 +14,7 @@ export class ProjectsComponent {
   hoveredImage: string | null = null;
   isOverlayVisible: boolean = false;
   selectedProject: any = null;
-
-  currentProjectIndex = 0; // Start mit dem ersten Projekt
+  currentProjectIndex = 0;
 
   projects = [
     {
@@ -81,4 +82,6 @@ export class ProjectsComponent {
     this.selectedProject = this.projects[this.currentProjectIndex];
     this.isOverlayVisible = true;
   }
+  constructor(private languageService: TranslationService) { }
+  translate = inject(TranslationService);
 }

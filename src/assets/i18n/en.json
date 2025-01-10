@@ -7,9 +7,35 @@
     "name": "Konstantin Stark",
     "myProjects": "My Projects",
     "contact": "Contact",
-    
+
     "frontendDeveloper": "Frontend Developer",
     "availableForRemoteWork": "Available for remote work",
     "livingNearBayreuth": "Living near Bayreuth",
-    "readyForNewChallenges": "Ready for new challenges"
+    "readyForNewChallenges": "Ready for new challenges",
+
+    "introduction": "Introduction",
+    "aboutMe": "About Me",
+    "aboutMeText": "Hi, I'm a creative developer from the Bayreuth area. Programming is not just a technical task – it's a creative process. With a head full of ideas and a tendency to sometimes take unconventional paths, I find solutions that others might overlook. My goal is to develop solutions through creative approaches that are both practical and innovative.",
+    "location": "In the Kulmbach and Bayreuth districts, I am flexible, but I am most effective remotely, as I can shape my work style and environment ideally there.",
+    "personality": "Open-minded, enthusiastic, and creative – the personality type 'ENFP' describes me well.",
+    "challenge": "Open to new challenges and constantly looking for ways to expand my knowledge and skills.",
+
+    "portfolioTitle": "Portfolio",
+    "selectedProjects": "Selected Projects",
+    "projectDescription": "Explore a selection of my work – interact with projects to see my skills in action.",
+    "projectSkill": "Skills",
+    "projects": "What is this project about?",
+    "nextProjectButton": "Next Project",
+
+    "projectDetails": {
+        "elPolloLoco": {
+        "description": "Jump, run, and throw game based on an object-oriented approach. Help Pepe collect coins and Tabasco sauce to fight the crazy chicken."
+        },
+        "join": {
+        "description": "Task manager inspired by the Kanban system. Create and organize tasks with drag-and-drop functionality, assign users and categories."
+        },
+        "pokedex": {
+        "description": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
+        }
+    }
 }

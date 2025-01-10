@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
