@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -14,4 +15,6 @@ export class NavbarComponent {
   toggleHamburgerMenu() {
     this.menuHidden = !this.menuHidden;
   }
+
+  translate = inject(TranslateService)
 }
