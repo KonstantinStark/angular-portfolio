@@ -24,14 +24,14 @@
         <div>
             <div class="nav-links">
 
-                <a href="#about-me">Über mich</a>
-                <a href="#skills">Fertigkeiten</a>
-                <a href="#projects">Projekte</a>
+                <a href="#about-me">{{ 'aboutMe' | translate }}</a>
+                <a href="#skills">{{ 'skills' | translate }}</a>
+                <a href="#projects">{{ 'projects' | translate }}</a>
                 <div class="burger-toggle-switch">
                     <input type="checkbox" id="burger-language-switch" />
                     <label for="burger-language-switch">
-                        <span class="switch-text en">EN</span>
-                        <span class="switch-text de">DE</span>
+                        <span class="switch-text en" (click)="translate.switchLanguage('en')">EN</span>
+                        <span class="switch-text de" (click)="translate.switchLanguage('de')">DE</span>
                     </label>
                 </div>
             </div>
