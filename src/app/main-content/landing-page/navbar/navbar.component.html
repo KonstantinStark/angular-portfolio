@@ -5,13 +5,13 @@
                 <div class="toggle-switch">
                     <input type="checkbox" id="language-switch" />
                     <label for="language-switch">
-                        <span class="switch-text en" (click)="translates.TranslationService('en')">EN</span>
-                        <span class="switch-text de" (click)="translates.TranslationService('de')">DE</span>
+                        <span class="switch-text en" (click)="translate.switchLanguage('en')">EN</span>
+                        <span class="switch-text de" (click)="translate.switchLanguage('de')">DE</span>
                     </label>
                 </div>
-                <a href="#about-me">Über mich</a>
-                <a href="#skills">Fertigkeiten</a>
-                <a href="#projects">Projekte</a>
+                <a href="#about-me">{{ 'aboutMe' | translate }}</a>
+                <a href="#skills">{{ 'skills' | translate }}</a>
+                <a href="#projects">{{ 'projects' | translate }}</a>
             </div>
         </div>
 

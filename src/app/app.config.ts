@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: 'legal-notice', component: LegalNoticeComponent },
 ];
 
-export function HttpLoaderFactory(http: HttpClient) {
+export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
@@ -27,7 +27,7 @@ export const appConfig: ApplicationConfig = {
       defaultLanguage: 'en',
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: httpLoaderFactory,
         deps: [HttpClient]
       }
     }).providers!

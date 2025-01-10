@@ -1,7 +1,5 @@
 {
-    "NAV": {
-      "ABOUT_ME": "Über mich",
-      "SKILLS": "Fertigkeiten",
-      "PROJECTS": "Projekte"
-    }
-  }
+    "aboutMe": "Über mich",
+    "skills": "Fertigkeiten",
+    "projects": "Projekte"
+}
