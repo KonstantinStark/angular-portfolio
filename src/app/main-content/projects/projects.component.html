@@ -1,5 +1,4 @@
 <section class="section">
-
     <div class="portfolio-container">
         <div class="portfolio">
             <div>
@@ -7,7 +6,6 @@
             </div>
             <h1 class="h1-project">{{ 'selectedProjects' | translate }}</h1>
             <p>{{ 'projectDescription' | translate }}</p>
-
             <div class="projects">
                 <div class="project" *ngFor="let project of projects" (mouseenter)="showImage(project.image)"
                     (mouseleave)="hideImage()" (click)="openOverlay(project)">
@@ -24,7 +22,6 @@
             </div>
         </div>
     </div>
-
     <div class="overlay" *ngIf="isOverlayVisible">
         <div class="coverlay-container">
             <div class="left-container">
@@ -46,7 +43,6 @@
                     </button>
                 </div>
             </div>
-
             <div class="right-container">
                 <div class="overlay-content">
                     <div class="close-btn-container">

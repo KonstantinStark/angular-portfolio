@@ -11,9 +11,8 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
+
 export class LandingPageComponent {
-
 constructor(private languageService: TranslationService) { }
-
-  translate = inject(TranslationService);
+translate = inject(TranslationService);
 }

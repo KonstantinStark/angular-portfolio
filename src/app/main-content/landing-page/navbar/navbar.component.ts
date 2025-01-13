@@ -18,6 +18,5 @@ export class NavbarComponent {
   }
 
   constructor(private languageService: TranslationService) { }
-
   translate = inject(TranslationService);
 }

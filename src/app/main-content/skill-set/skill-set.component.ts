@@ -30,7 +30,6 @@ export class SkillSetComponent {
 
   onHover(iconName: string): void {
     this.hoveredIcon = iconName;
-
     if (iconName === 'Growth mindset') {
       const targetIcon = this.icons.find((icon) => icon.name === iconName);
       if (targetIcon) {
@@ -41,7 +40,6 @@ export class SkillSetComponent {
 
   onLeave(iconName: string): void {
     this.hoveredIcon = null;
-
     if (iconName === 'Growth mindset') {
       const targetIcon = this.icons.find((icon) => icon.name === iconName);
       if (targetIcon) {

@@ -6,7 +6,6 @@ import { RouterLink } from '@angular/router';
 import { TranslationService } from './../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -15,9 +14,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-
   http = inject(HttpClient)
-
   contactData = {
     name: "",
     email: "",
@@ -51,8 +48,6 @@ export class ContactComponent {
         });
     }
   }
-
-
 
   get img(): string {
     return this.contactData.terms

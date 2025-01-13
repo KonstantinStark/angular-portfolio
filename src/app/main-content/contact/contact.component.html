@@ -5,14 +5,9 @@
             <h2>{{ 'contactMeTitle' | translate }}</h2>
             <h1>{{ 'letsCollaborate' | translate }}</h1>
             <span>{{ 'problemToSolve' | translate }}</span>
-            <p>
-                {{ 'contactFormDescription' | translate }}
-            </p>
-            <p> {{ 'frontendDeveloperPrompt' | translate }}<span> {{ 'talk' | translate }}</span> <br>
-            </p>
-
+            <p>{{ 'contactFormDescription' | translate }}</p>
+            <p>{{ 'frontendDeveloperPrompt' | translate }}<span> {{ 'talk' | translate }}</span> <br></p>
         </div>
-
 
         <div class="contact-form">
             <div class="contact-form-container">
@@ -21,11 +16,9 @@
                     <div class="form-field">
                         <input #name="ngModel" minlength="4" [(ngModel)]="contactData.name" type="text" id="name"
                             name="name" placeholder="{{ 'namePlaceholder' | translate }}" required />
-
                         @if (!name.valid && (name.touched || contactForm.submitted)) {
-                            <div class="valid-text">{{ 'nameMissing' | translate }}</div>
+                        <div class="valid-text">{{ 'nameMissing' | translate }}</div>
                         }
-                        <!-- <label for="name">Ups! Ihr Name scheint zu fehlen</label> -->
                     </div>
                     <br> <br>
                     <div class="text-line"></div>
@@ -33,29 +26,20 @@
                         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
                             placeholder="{{ 'emailPlaceholder' | translate }}" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}" />
-
                         @if (!email.valid && (email.touched || contactForm.submitted)) {
-                            <div class="valid-text">{{ 'emailRequired' | translate }}</div>
-                        }
-                        <!-- <label for="email">Hoppla! Ihre E-Mail ist erforderlich</label> -->
+                        <div class="valid-text">{{ 'emailRequired' | translate }}</div>}
                     </div>
                     <br> <br>
                     <div class="text-line"></div>
-
-
                     <div class="form-field">
                         <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" class="text-line"
-                            id="message" name="message" placeholder="{{ 'helpPlaceholder' | translate }}" required></textarea>
-
+                            id="message" name="message" placeholder="{{ 'helpPlaceholder' | translate }}"
+                            required></textarea>
                         @if (!message.valid && (message.touched || contactForm.submitted)) {
-                            <div class="valid-text">{{ 'whatToDevelop' | translate }}</div>
-                        }
-                        <!-- <label class="text-line" for="message">Hallo Konstantin, ich bin interessiert an...</label> -->
+                        <div class="valid-text">{{ 'whatToDevelop' | translate }}</div>}
                     </div>
-
                     <br> <br>
                     <div class="text-line"></div>
-
                     <div class="privacy-policy">
                         <div class="terms-container">
                             <input #terms="ngModel" [(ngModel)]="contactData.terms" class="terms" type="checkbox"
@@ -64,23 +48,20 @@
                                 <img [src]="img" />
                             </label>
                         </div>
-
-
                         <label for="privacy" class="privacy-text">
                             {{ 'privacyText1' | translate }} <a routerLink="privacy-policy" class="privacy-link"
                                 (click)="scrollToTop()">{{ 'privacy' | translate }}</a> {{ 'privacyText2' | translate }}
                         </label>
                     </div>
                     @if (!contactData.terms && contactForm.submitted) {
-                        <div class="valid-text-policy">{{ 'acceptPrivacyPolicy' | translate }}</div>
+                    <div class="valid-text-policy">{{ 'acceptPrivacyPolicy' | translate }}</div>
                     }
-
                     <div class="button-container">
-                        <button value="submit" type="submit" class="custom-button">{{ 'sayHelloButton' | translate }}</button>
+                        <button value="submit" type="submit" class="custom-button">{{ 'sayHelloButton' | translate
+                            }}</button>
                     </div>
                 </form>
             </div>
         </div>
-
     </div>
 </section>

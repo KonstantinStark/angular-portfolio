@@ -9,7 +9,6 @@ import { NavbarComponent } from '../landing-page/navbar/navbar.component';
   templateUrl: './privacy-policy.component.html',
   styleUrl: './privacy-policy.component.scss'
 })
+
 export class PrivacyPolicyComponent {
-
 }
-
