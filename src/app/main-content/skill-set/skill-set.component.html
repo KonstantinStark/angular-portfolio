@@ -2,23 +2,19 @@
     <div class="container">
         <div #animateElement class="skill-set-container">
             <div>
-                <h2>Technologien</h2>
+                <h2>{{ 'technologiesTitle' | translate }}</h2>
             </div>
             <div class="skill-set-text-container">
-                <h1>Fertigkeiten</h1>
+                <h1>Skills</h1>
                 <p>
-                    Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von
-                    Frontend-Technologien und -Konzepten erworben. Ich bin offen für neue Technologien und Methoden, um
-                    meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden
-                    Landschaft
-                    der Webentwicklung an der Spitze zu bleiben.
+                    {{ 'skillsDescription' | translate }}
                 </p>
-                <h3>Sie benötigen eine <span>andere Fähigkeit?</span></h3>
-                <p>Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.</p>
+                <h3> {{ 'needOtherSkill' | translate }} <span> {{ 'needOtherSkills' | translate }}</span></h3>
+                <p> {{ 'contactPrompt' | translate }}</p>
                 <div class="button-container">
                     <a href="#contact">
                         <button class="custom-button" id="right-button">
-                            <div class="button-text">Schreibe mir</div>
+                            <div class="button-text">{{ 'writeToMeButton' | translate }}</div>
                         </button>
                     </a>
                 </div>
@@ -31,7 +27,7 @@
                     (mouseover)="onHover(icon.name)" (mouseout)="onLeave(icon.name)" />
                 <div class="bubble" *ngIf="hoveredIcon === 'Growth mindset'">
                     <div class="bubble-content">
-                        <p class="bubble-text">Bereit neues zu lernen</p>
+                        <p class="bubble-text">{{ 'readyToLearn' | translate }}</p>
                         <img class="bubble-icon" src="./assets/img/skill-set/Frame 300.png" />
                     </div>
                 </div>

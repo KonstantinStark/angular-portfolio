@@ -1,10 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TranslationService } from './../../translation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-skill-set',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './skill-set.component.html',
   styleUrl: './skill-set.component.scss'
 })
@@ -21,7 +23,7 @@ export class SkillSetComponent {
     { name: 'Material Design', image: './assets/img/skill-set/Material Design.png' },
     { name: 'Rest-Api', image: './assets/img/skill-set/Rest-Api.png' },
     { name: 'Scrum', image: './assets/img/skill-set/Scrum.png' },
-    { name: 'Growth mindset', image: './assets/img/skill-set/18. Growth Mindset interaction.png'},
+    { name: 'Growth mindset', image: './assets/img/skill-set/18. Growth Mindset interaction.png' },
   ];
 
   hoveredIcon: string | null = null;
@@ -47,4 +49,7 @@ export class SkillSetComponent {
       }
     }
   }
+
+  constructor(private languageService: TranslationService) { }
+  translate = inject(TranslationService);
 }

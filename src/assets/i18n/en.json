@@ -36,5 +36,35 @@
         "pokedex": {
         "description": "Based on the PokéAPI, a simple library that provides and catalogs Pokémon information."
         }
-    }
+    },
+
+    "technologiesTitle": "Technologies",
+    "skillsTitle": "Skills",
+    "skillsDescription": "Throughout my journey, I have worked on various projects, acquiring a range of frontend technologies and concepts. I am open to new technologies and methods to continuously improve my skills and stay at the forefront of the ever-evolving field of web development.",
+    "needOtherSkill": "Do you need a",
+    "needOtherSkills": "different skill?",
+    "contactPrompt": "Get in touch with me. I look forward to expanding my knowledge further.",
+    "writeToMeButton": "Write to me",
+    "readyToLearn": "Ready to learn new things",
+
+    "contactMeTitle": "Contact me",
+    "letsCollaborate": "Let's collaborate",
+    "problemToSolve": "Do you have a problem to solve?",
+    "contactFormDescription": "Reach out to me through this form. I’m interested in hearing your ideas and contributing to your projects.",
+    "frontendDeveloperPrompt": "Need a frontend developer?",
+    "talk": "Let’s talk!",
+
+    "nameMissing": "Oops! Your name seems to be missing",
+    "emailRequired": "Oops! Your email is required",
+    "whatToDevelop": "What would you like to develop?",
+    "privacyText1": "I have read the",
+    "privacyText2": "and agree to the processing of my data as described.",
+    "privacy": "privacy policy",
+    "acceptPrivacyPolicy": "Please accept the privacy policy.",
+    "sayHelloButton": "Say hello :)",
+
+    "acceptPrivacyPolicy": "Please accept the privacy policy.",
+    "namePlaceholder": "What is your name?",
+    "emailPlaceholder": "What is your email?",
+    "helpPlaceholder": "How can I help you?"
 }
