@@ -66,5 +66,13 @@
     "acceptPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
     "namePlaceholder": "Wie ist Ihr Name?",
     "emailPlaceholder": "Wie lautet Ihre E-Mail?",
-    "helpPlaceholder": "Wie kann ich Ihnen helfen?"
+    "helpPlaceholder": "Wie kann ich Ihnen helfen?",
+
+    "webDeveloper": "Web Entwickler",
+    "location": "Bayreuth, Deutschland",
+
+    "imprintTitle": "Impressum",
+    "contactTitle": "Kontakt",
+    "phone": "Telefon",
+    "source": "Quelle"
 }

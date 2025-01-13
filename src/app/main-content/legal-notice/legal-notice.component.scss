@@ -33,3 +33,9 @@ a {
     color: $green-color;
     text-decoration: none;
 }
+
+@media (max-width: 470px) {
+    div[_ngcontent-ng-c3555555244] {
+        font-size: 16px;
+    }
+}

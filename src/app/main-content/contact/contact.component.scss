@@ -206,3 +206,9 @@ input[type="checkbox"] {
         font-size: 26px !important;
     }
 }
+
+@media (max-width: 450px) {
+    .button-container[_ngcontent-ng-c92849243] {
+        padding-top: 52px;
+    }
+}

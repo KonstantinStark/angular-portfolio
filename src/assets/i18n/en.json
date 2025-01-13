@@ -66,5 +66,13 @@
     "acceptPrivacyPolicy": "Please accept the privacy policy.",
     "namePlaceholder": "What is your name?",
     "emailPlaceholder": "What is your email?",
-    "helpPlaceholder": "How can I help you?"
+    "helpPlaceholder": "How can I help you?",
+
+    "webDeveloper": "Web Developer",
+    "location": "Bayreuth, Germany",
+
+    "imprintTitle": "Imprint",
+    "contactTitle": "Contact",
+    "phone": "Phone",
+    "source": "Source"
 }
