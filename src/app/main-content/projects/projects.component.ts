@@ -23,7 +23,7 @@ export class ProjectsComponent {
       skill: 'JavaScript | HTML | CSS ',
       image: './assets/img/projects/loco.png',
       imageOverlay: './assets/img/projects/locoOverlay.png',
-      description: 'Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.',
+      description: 'PROJECTS.DESCRIPTION_1',
       skillIcons: [
         { image: './assets/img/projects/js.png' },
         { image: './assets/img/projects/html.png' },
@@ -36,7 +36,7 @@ export class ProjectsComponent {
       skill: 'JavaScript | Firebase | HTML | CSS ',
       image: './assets/img/projects/join.png',
       imageOverlay: './assets/img/projects/joinOverlay.png',
-      description: 'Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.',
+      description: 'PROJECTS.DESCRIPTION_2',
       skillIcons: [
         { image: './assets/img/projects/js.png' },
         { image: './assets/img/projects/firebase.png' },
@@ -50,7 +50,7 @@ export class ProjectsComponent {
       skill: 'JavaScript | Rest-Api | HTML | CSS ',
       image: './assets/img/projects/poke.png',
       imageOverlay: './assets/img/projects/pokeOverlay.png',
-      description: 'Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.',
+      description: 'PROJECTS.DESCRIPTION_3',
       skillIcons: [
         { image: './assets/img/projects/js.png' },
         { image: './assets/img/projects/html.png' },

@@ -13,7 +13,6 @@
     "readyForNewChallenges": "Bereit für neue Herausforderungen",
     "introduction": "Vorstellung",
 
-    "aboutMe": "Über mich",
     "aboutMeText": "Hi, ich bin ein kreativer Entwickler aus der Nähe von Bayreuth. Programmieren ist nicht nur eine technische Aufgabe - es ist ein kreativer Prozess. Mit einem Kopf voller Ideen und einem Hang dazu, auch mal unkonventionelle Wege zu gehen, finde ich Lösungen, die andere vielleicht übersehen. Dabei ist es mein Ziel, durch kreative Ansätze Lösungen zu entwickeln, die sowohl praktisch als auch innovativ sind.",
     "location": "Im Kulmbacher und Bayreuther Landkreis bin ich flexibel einsetzbar, am effektivsten jedoch remote, da ich dort meine Arbeitsweise und Umgebung ideal gestalten kann.",
     "personality": "Aufgeschlossen, enthusiastisch und kreativ – der Persönlichkeitstyp 'ENFP' beschreibt mich treffend.",
@@ -25,19 +24,12 @@
     "projectDetails": "Worum geht es bei diesem Projekt?",
     "nextProjectButton": "Nächstes Projekt",
 
-    "projectDetails": {
-        "elPolloLoco": {
-        "description": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."
-        },
-        "join": {
-        "description": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
-        },
-        "pokedex": {
-        "description": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
-        }
+    "PROJECTS": {
+    "DESCRIPTION_1": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+    "DESCRIPTION_2": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+    "DESCRIPTION_3": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert."
     },
 
-    
     "technologiesTitle": "Technologien",
     "skillsTitle": "Fertigkeiten",
     "skillsDescription": "Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und -Konzepten erworben. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung an der Spitze zu bleiben.",
@@ -45,9 +37,9 @@
     "needOtherSkills": "andere Fähigkeit?",
     "contactPrompt": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
     "writeToMeButton": "Schreibe mir",
-     "readyToLearn": "Bereit neues zu lernen",
+    "readyToLearn": "Bereit neues zu lernen",
 
-     "contactMeTitle": "Kontaktieren Sie mich",
+    "contactMeTitle": "Kontaktieren Sie mich",
     "letsCollaborate": "Lasst uns zusammenarbeiten",
     "problemToSolve": "Haben Sie ein Problem zu lösen?",
     "contactFormDescription": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihren Ideen zu hören und an Ihren Projekten mitzuwirken.",
@@ -63,7 +55,6 @@
     "acceptPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
     "sayHelloButton": "Hallo sagen :)",
 
-    "acceptPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzbestimmungen.",
     "namePlaceholder": "Wie ist Ihr Name?",
     "emailPlaceholder": "Wie lautet Ihre E-Mail?",
     "helpPlaceholder": "Wie kann ich Ihnen helfen?",

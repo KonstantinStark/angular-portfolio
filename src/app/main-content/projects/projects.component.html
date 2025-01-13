@@ -32,7 +32,7 @@
                     <h1 class="selectedProject-number">{{ selectedProject.number }}</h1>
                     <h2 class="selectedProject-name">{{ selectedProject.name }}</h2>
                     <h3>{{ 'projects' | translate }}</h3>
-                    <p class="selectedProject-description">{{ selectedProject.description }}</p>
+                    <p class="selectedProject-description">{{ selectedProject?.description | translate }}</p>
                     @for (projects of selectedProject.skillIcons; track $index) {
                     <img class="icon" src="{{ projects.image }}">
                     }
