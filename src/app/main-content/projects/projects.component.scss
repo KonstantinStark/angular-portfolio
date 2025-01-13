@@ -6,13 +6,12 @@ $green-color: #3dcfb6;
     display: flex;
     justify-content: center;
     font-family: 'Karla';
-    background: radial-gradient(70% 50% at -30% 48%,#08463b,rgba(0, 0, 0, 0));
+    background: radial-gradient(70% 50% at -30% 48%, #08463b, rgba(0, 0, 0, 0));
 }
 
 .portfolio-container {
     display: flex;
     align-items: center;
-    margin-bottom: 200px;
 
     .portfolio h2 {
         font-size: 24px;
@@ -117,7 +116,6 @@ $green-color: #3dcfb6;
 
     .left-container {
         width: 480px;
-        height: 474px;
 
         h1,
         h3 {
@@ -297,12 +295,15 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 1000px) {
+    .next-btn-container {
+        padding-bottom: 20px;
+    }
+
     .coverlay-container {
         flex-direction: column-reverse !important;
     }
 
     .overlay {
-        height: 17.7%;
         padding: 0px;
         width: auto;
     }
@@ -315,31 +316,6 @@ $green-color: #3dcfb6;
         font-size: 80px !important;
     }
 }
-
-@media (max-width: 495px) {
-    .overlay {
-        height: 18%;
-    }
-}
-
-@media (max-width: 428px) {
-    .overlay {
-        height: 15.5% !important;
-    }
-}
-
-@media (max-width: 339px) {
-    .overlay {
-        height: 16% !important;
-    }
-}
-
-@media (max-width: 325px) {
-    .overlay {
-        height: 15.5% !important;
-    }
-}
-
 
 @media (max-width: 545px) {
     h3 {
@@ -368,12 +344,6 @@ $green-color: #3dcfb6;
 }
 
 @media (max-width: 490px) {
-    .next-btn-container {
-        position: absolute;
-        top: 94%;
-        right: 0%;
-    }
-
     .button-container {
         padding-top: 20px !important;
         ;
