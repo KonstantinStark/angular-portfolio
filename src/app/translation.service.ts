@@ -7,14 +7,14 @@ import { TranslateService } from '@ngx-translate/core';
   providedIn: 'root'
 })
 export class TranslationService {
-  currentLanguage: string = 'de';
-
+  translateTo(language: string) {
+    throw new Error('Method not implemented.');
+  }
   constructor(private translates: TranslateService) {
-    this.translates.setDefaultLang(this.currentLanguage);
+    translates.setDefaultLang('de');
   }
 
-  public switchLanguage(): void {
-    this.currentLanguage = this.currentLanguage === 'en' ? 'de' : 'en';
-    this.translates.use(this.currentLanguage);
+  public switchLanguage(language: string): void {
+    this.translates.use(language);
   }
 }
