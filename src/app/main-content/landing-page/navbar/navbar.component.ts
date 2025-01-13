@@ -9,14 +9,17 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
+
 export class NavbarComponent {
-[x: string]: any;
   menuHidden = true;
+
+  constructor(public translationService: TranslationService) {}
 
   toggleHamburgerMenu() {
     this.menuHidden = !this.menuHidden;
   }
 
-  constructor(private languageService: TranslationService) { }
-  translate = inject(TranslationService);
+  switchLanguage() {
+    this.translationService.switchLanguage();
+  }
 }

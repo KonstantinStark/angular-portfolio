@@ -4,9 +4,9 @@
             <div class="nav-links">
                 <div class="toggle-switch">
                     <input type="checkbox" id="language-switch" />
-                    <label for="language-switch">
-                        <span class="switch-text en" (click)="translate.switchLanguage('de')">DE</span>
-                        <span class="switch-text de" (click)="translate.switchLanguage('en')">EN</span>
+                    <label for="language-switch" (click)="switchLanguage()">
+                        <span class="switch-text en" [class.active]="translationService.currentLanguage === 'de'">DE</span>
+                        <span class="switch-text de" [class.active]="translationService.currentLanguage === 'en'">EN</span>
                     </label>
                 </div>
                 <a href="#about-me">{{ 'aboutMe' | translate }}</a>
@@ -26,9 +26,9 @@
                 <a href="#projects">{{ 'project' | translate }}</a>
                 <div class="burger-toggle-switch">
                     <input type="checkbox" id="burger-language-switch" />
-                    <label for="burger-language-switch">
-                        <span class="switch-text en" (click)="translate.switchLanguage('de')">DE</span>
-                        <span class="switch-text de" (click)="translate.switchLanguage('en')">EN</span>
+                    <label for="language-switch" (click)="switchLanguage()">
+                        <span class="switch-text en" [class.active]="translationService.currentLanguage === 'de'">DE</span>
+                        <span class="switch-text de" [class.active]="translationService.currentLanguage === 'en'">EN</span>
                     </label>
                 </div>
             </div>
