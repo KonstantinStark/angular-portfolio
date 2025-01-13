@@ -11,7 +11,7 @@ export class TranslationService {
     throw new Error('Method not implemented.');
   }
   constructor(private translates: TranslateService) {
-    translates.setDefaultLang('en');
+    translates.setDefaultLang('de');
   }
 
   public switchLanguage(language: string): void {
