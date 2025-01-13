@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslationService } from '../../../translation.service';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -7,18 +7,21 @@ import { TranslateModule } from '@ngx-translate/core';
   standalone: true,
   imports: [TranslateModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
 
 export class NavbarComponent {
-[x: string]: any;
   menuHidden = true;
+
+  constructor(private languageService: TranslationService) { }
 
   toggleHamburgerMenu() {
     this.menuHidden = !this.menuHidden;
   }
 
-  constructor(private languageService: TranslationService) { }
-
-  translate = inject(TranslationService);
+  switchLanguage() {
+    const currentLang = this.languageService.getCurrentLanguage();
+    const newLang = currentLang === 'en' ? 'de' : 'en';
+    this.languageService.switchLanguage(newLang);
+  }
 }
