@@ -29,6 +29,8 @@ export class ProjectsComponent {
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
       ],
+      githubUrl: 'soon',
+      liveTestUrl: 'soon',
     },
     {
       number: '02',
@@ -43,6 +45,8 @@ export class ProjectsComponent {
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
       ],
+      githubUrl: 'soon',
+      liveTestUrl: 'soon',
     },
     {
       number: '03',
