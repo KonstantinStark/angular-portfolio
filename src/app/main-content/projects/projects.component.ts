@@ -56,6 +56,8 @@ export class ProjectsComponent {
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
       ],
+      githubUrl: 'https://github.com/KonstantinStark/Pokedex',
+      liveTestUrl: 'https://www.pokedex.konstantin-stark.de/',
     }
   ];
 
