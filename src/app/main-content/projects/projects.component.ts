@@ -29,8 +29,8 @@ export class ProjectsComponent {
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
       ],
-      githubUrl: 'soon',
-      liveTestUrl: 'soon',
+      githubUrl: 'https://github.com/KonstantinStark/El-Pollo-Loco',
+      liveTestUrl: 'https://www.loco.konstantin-stark.de/',
     },
     {
       number: '02',
