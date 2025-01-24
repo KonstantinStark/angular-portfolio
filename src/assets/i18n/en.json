@@ -41,7 +41,7 @@
     "readyToLearn": "Ready to learn something new",
 
     "contactMeTitle": "Contact Me",
-    "letsCollaborate": "Let's collaborate",
+    "letsCollaborate": "Let's work together",
     "problemToSolve": "Is there a problem to solve?",
     "contactFormDescription": "Contact me through this form, I’m interested in hearing your ideas and contributing to your projects.",
     "frontendDeveloperPrompt": "Need a developer?",
@@ -50,7 +50,7 @@
     "nameMissing": "Oops! Your name seems to be missing",
     "emailRequired": "Oops! Your email is required",
     "whatToDevelop": "What would you like to develop?",
-    "privacyText1": "I have read the ",
+    "privacyText1": "I have read the",
     "privacyText2": "and I agree to the processing of my data as described.",
     "privacy": "Privacy Policy",
     "acceptPrivacyPolicy": "Please accept the privacy policy.",
