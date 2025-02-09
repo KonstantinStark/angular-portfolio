@@ -36,8 +36,8 @@ export class ProjectsComponent {
       number: '02',
       name: 'Join',
       skill: 'JavaScript | Firebase | HTML | CSS ',
-      image: './assets/img/projects/join.png',
-      imageOverlay: './assets/img/projects/joinOverlay.png',
+      image: './assets/img/projects/joinSoon.png',
+      imageOverlay: './assets/img/projects/joinOverlaySoon.png',
       description: 'PROJECTS.DESCRIPTION_2',
       skillIcons: [
         { image: './assets/img/projects/js.png' },
@@ -45,8 +45,8 @@ export class ProjectsComponent {
         { image: './assets/img/projects/html.png' },
         { image: './assets/img/projects/css.png' },
       ],
-      githubUrl: 'soon',
-      liveTestUrl: 'soon',
+      githubUrl: 'https://github.com/KonstantinStark/join',
+      liveTestUrl: 'finished soon',
     },
     {
       number: '03',

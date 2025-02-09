@@ -35,12 +35,16 @@
                     }
                 </div>
                 <div class="button-container">
-                    <button class="custom-button" id="left-button" *ngIf="selectedProject.githubUrl">
-                        <a [href]="selectedProject.githubUrl" target="_blank" class="button-text">GitHub</a>
-                    </button>
-                    <button class="custom-button" id="right-button" *ngIf="selectedProject.liveTestUrl">
-                        <a [href]="selectedProject.liveTestUrl" target="_blank" class="button-text">Live Test</a>
-                    </button>
+                    <a [href]="selectedProject.githubUrl" target="_blank" *ngIf="selectedProject.githubUrl">
+                        <button class="custom-button" id="left-button">
+                            <span class="button-text">GitHub</span>
+                        </button>
+                    </a>
+                    <a [href]="selectedProject.liveTestUrl" target="_blank" *ngIf="selectedProject.liveTestUrl">
+                        <button class="custom-button" id="right-button">
+                            <span class="button-text">Live Test</span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="right-container">
